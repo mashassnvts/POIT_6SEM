@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Data\data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Images\Benners-Lee.jpg" />
+    <Content Include="Data\Images\Chonsky.jpg" />
+    <Content Include="Data\Images\Codd.jpg" />
+    <Content Include="Data\Images\Dijkstra.jpg" />
+    <Content Include="Data\Images\Khuth.jpg" />
+    <Content Include="Data\Images\Neumann.jpg" />
+    <Content Include="Data\Images\Tovalds.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL003\DAL003.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\download\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4842A1C4-79A8-4CF7-BB17-569BC6D290AB}|ASPA003\\ASPA003.csproj|d:\\masha\\university\\6_sem\\pis\\pis_02\\aspa\\aspa003\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4842A1C4-79A8-4CF7-BB17-569BC6D290AB}|ASPA003\\ASPA003.csproj|solutionrelative:aspa003\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41AE72F2-BF1D-42CF-9224-82347ECCF99C}|DAL003\\DAL003.csproj|d:\\masha\\university\\6_sem\\pis\\pis_02\\aspa\\dal003\\data\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{41AE72F2-BF1D-42CF-9224-82347ECCF99C}|DAL003\\DAL003.csproj|solutionrelative:dal003\\data\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8798267-1A68-444F-B71D-AAC1BE6364F2}|Test_DAL003\\Test_DAL003.csproj|d:\\masha\\university\\6_sem\\pis\\pis_02\\aspa\\test_dal003\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8798267-1A68-444F-B71D-AAC1BE6364F2}|Test_DAL003\\Test_DAL003.csproj|solutionrelative:test_dal003\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41AE72F2-BF1D-42CF-9224-82347ECCF99C}|DAL003\\DAL003.csproj|d:\\masha\\university\\6_sem\\pis\\pis_02\\aspa\\dal003\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41AE72F2-BF1D-42CF-9224-82347ECCF99C}|DAL003\\DAL003.csproj|solutionrelative:dal003\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41AE72F2-BF1D-42CF-9224-82347ECCF99C}|DAL003\\DAL003.csproj|d:\\masha\\university\\6_sem\\pis\\pis_02\\aspa\\dal003\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41AE72F2-BF1D-42CF-9224-82347ECCF99C}|DAL003\\DAL003.csproj|solutionrelative:dal003\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\ASPA003\\Program.cs",
+              "RelativeDocumentMoniker": "ASPA003\\Program.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\ASPA003\\Program.cs",
+              "RelativeToolTip": "ASPA003\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:56:22.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\Test_DAL003\\Program.cs",
+              "RelativeDocumentMoniker": "Test_DAL003\\Program.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\Test_DAL003\\Program.cs",
+              "RelativeToolTip": "Test_DAL003\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:52:30.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\DAL003\\Repository.cs",
+              "RelativeDocumentMoniker": "DAL003\\Repository.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\DAL003\\Repository.cs",
+              "RelativeToolTip": "DAL003\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:51:10.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\DAL003\\IRepository.cs",
+              "RelativeDocumentMoniker": "DAL003\\IRepository.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\DAL003\\IRepository.cs",
+              "RelativeToolTip": "DAL003\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:51:08.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data.json",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\DAL003\\Data\\data.json",
+              "RelativeDocumentMoniker": "DAL003\\Data\\data.json",
+              "ToolTip": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\DAL003\\Data\\data.json",
+              "RelativeToolTip": "DAL003\\Data\\data.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-24T13:12:43.591Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

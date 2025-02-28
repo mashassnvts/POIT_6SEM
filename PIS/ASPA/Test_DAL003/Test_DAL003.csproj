@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Data\data.json" />
+    <Content Remove="wwwroot\Images\Benners-Lee.jpg" />
+    <Content Remove="wwwroot\Images\Chonsky.jpg" />
+    <Content Remove="wwwroot\Images\Codd.jpg" />
+    <Content Remove="wwwroot\Images\Dijkstra.jpg" />
+    <Content Remove="wwwroot\Images\Khuth.jpg" />
+    <Content Remove="wwwroot\Images\Neumann.jpg" />
+    <Content Remove="wwwroot\Images\Tovalds.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Images\Benners-Lee.jpg" />
+    <Content Include="Data\Images\Chonsky.jpg" />
+    <Content Include="Data\Images\Codd.jpg" />
+    <Content Include="Data\Images\Dijkstra.jpg" />
+    <Content Include="Data\Images\Khuth.jpg" />
+    <Content Include="Data\Images\Neumann.jpg" />
+    <Content Include="Data\Images\Tovalds.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL003\DAL003.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\data.json" />
+    <None Include="wwwroot\Images\Benners-Lee.jpg" />
+    <None Include="wwwroot\Images\Chonsky.jpg" />
+    <None Include="wwwroot\Images\Codd.jpg" />
+    <None Include="wwwroot\Images\Dijkstra.jpg" />
+    <None Include="wwwroot\Images\Khuth.jpg" />
+    <None Include="wwwroot\Images\Neumann.jpg" />
+    <None Include="wwwroot\Images\Tovalds.jpg" />
+  </ItemGroup>
+
+</Project>

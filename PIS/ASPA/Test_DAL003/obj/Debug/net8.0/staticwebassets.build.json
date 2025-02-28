@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "0ylItKLUIiDBquXELWwtMUhCuYJWQaNi5H64O82HIXg=",
+  "Source": "Test_DAL003",
+  "BasePath": "_content/Test_DAL003",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Test_DAL003\\wwwroot",
+      "Source": "Test_DAL003",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\PIS\\PIS_02\\ASPA\\Test_DAL003\\wwwroot\\",
+      "BasePath": "_content/Test_DAL003",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
