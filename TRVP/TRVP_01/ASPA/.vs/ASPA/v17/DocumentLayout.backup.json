@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_01\\aspa\\aspa002_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|solutionrelative:aspa002_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_01\\aspa\\aspa002_1\\wwwroot\\neumann.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|solutionrelative:aspa002_1\\wwwroot\\neumann.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_01\\aspa\\aspa002_1\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|solutionrelative:aspa002_1\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_01\\aspa\\aspa002_1\\wwwroot\\js\\calc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E421C060-5359-4FA8-B438-5D07297FB026}|ASPA002_1\\ASPA002_1.csproj|solutionrelative:aspa002_1\\wwwroot\\js\\calc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Calc.js",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\wwwroot\\js\\Calc.js",
+              "RelativeDocumentMoniker": "ASPA002_1\\wwwroot\\js\\Calc.js",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\wwwroot\\js\\Calc.js",
+              "RelativeToolTip": "ASPA002_1\\wwwroot\\js\\Calc.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-16T08:25:31.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.css",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "ASPA002_1\\wwwroot\\css\\index.css",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "ASPA002_1\\wwwroot\\css\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-16T08:24:00.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Neumann.html",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\wwwroot\\Neumann.html",
+              "RelativeDocumentMoniker": "ASPA002_1\\wwwroot\\Neumann.html",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\wwwroot\\Neumann.html",
+              "RelativeToolTip": "ASPA002_1\\wwwroot\\Neumann.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-16T08:21:20.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\Program.cs",
+              "RelativeDocumentMoniker": "ASPA002_1\\Program.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_01\\ASPA\\ASPA002_1\\Program.cs",
+              "RelativeToolTip": "ASPA002_1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T08:08:30.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

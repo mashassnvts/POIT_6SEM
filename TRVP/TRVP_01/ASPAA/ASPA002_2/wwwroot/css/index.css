@@ -1,0 +1,22 @@
+﻿.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.blue {
+    color: blue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    float: left;
+}
