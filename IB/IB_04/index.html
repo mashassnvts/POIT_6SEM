@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование текста</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        textarea, select, input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 6px;
+            background: #f7f9fc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        button {
+            width: 48%;
+            padding: 12px;
+            background: linear-gradient(135deg, #20fae0, #ff758c);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Шифрование и расшифрование текста</h1>
+        <form id="cryptoForm">
+            <label for="text">Введите текст:</label>
+            <textarea id="text" name="text" rows="10"></textarea>
+
+            <label for="cipher">Выберите шифр:</label>
+            <select id="cipher" name="cipher">
+                <option value="caesar">Шифр Цезаря</option>
+                <option value="trithemius">Таблица Трисемуса</option>
+            </select>
+
+            <button type="button" onclick="encrypt()">Зашифровать текст</button>
+            <button type="button" onclick="decrypt()">Расшифровать текст</button>
+        </form>
+
+        <hr>
+
+        <form id="fileForm">
+            <label for="file">Загрузите текстовый файл:</label>
+            <input type="file" id="file" name="file" accept=".txt" required>
+
+            <button type="button" onclick="encryptFile()">Зашифровать файл</button>
+            <button type="button" onclick="decryptFile()">Расшифровать файл</button>
+        </form>
+
+        <h2>Результат:</h2>
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

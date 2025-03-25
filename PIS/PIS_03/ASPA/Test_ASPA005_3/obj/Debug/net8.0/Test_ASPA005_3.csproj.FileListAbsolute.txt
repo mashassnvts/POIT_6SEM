@@ -1,0 +1,14 @@
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\bin\Debug\net8.0\Test_ASPA005_3.exe
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\bin\Debug\net8.0\Test_ASPA005_3.deps.json
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\bin\Debug\net8.0\Test_ASPA005_3.runtimeconfig.json
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\bin\Debug\net8.0\Test_ASPA005_3.dll
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\bin\Debug\net8.0\Test_ASPA005_3.pdb
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.AssemblyInfoInputs.cache
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.AssemblyInfo.cs
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.csproj.CoreCompileInputs.cache
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.dll
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\refint\Test_ASPA005_3.dll
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.pdb
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\Test_ASPA005_3.genruntimeconfig.cache
+D:\masha\university\6_sem\PIS\PIS_03\ASPA\Test_ASPA005_3\obj\Debug\net8.0\ref\Test_ASPA005_3.dll
