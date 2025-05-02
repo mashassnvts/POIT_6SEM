@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Частотный анализ шифртекстов Enigma</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .chart-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Частотный анализ шифртекстов Enigma</h1>
+    
+    <div class="info">
+        <p><strong>Исходное сообщение:</strong> "SOSNOVETSMARIAIGOREVNA"</p>
+        <p><strong>Конфигурация роторов:</strong> RotorIII → GammaRotor → RotorV</p>
+        <p><strong>Рефлектор:</strong> ReflectorCDunn</p>
+    </div>
+
+    <h2>Шифртексты для разных начальных позиций</h2>
+    
+    <div class="chart-container">
+        <canvas id="combinedChart"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="chart1"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="chart2"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="chart3"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="chart4"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="chart5"></canvas>
+    </div>
+
+    <script>
+        // Данные из вашего примера
+        const encryptedTexts = [
+            { 
+                settings: "Pos=A,A,A", 
+                text: "QYVJZQJXQ ZKXUO UQYVJN" 
+            },
+            { 
+                settings: "Pos=B,B,C", 
+                text: "GXHXQKXGJ KXHXU GXHXQK" 
+            },
+            { 
+                settings: "Pos=X,Y,Z", 
+                text: "XQYVJZQJX QZKXU OQYVJN" 
+            },
+            { 
+                settings: "Pos=Q,W,E", 
+                text: "JXQYVJZQJ XQZKX UOQYVJ" 
+            },
+            { 
+                settings: "Pos=F,G,H", 
+                text: "VJZQJXQYV JZQJX QYVJZQ" 
+            }
+        ];
+
+        // Функция для подсчета частот символов
+        function calculateFrequencies(text) {
+            const freq = {};
+            const letters = text.replace(/[^A-Z]/g, ''); // Удаляем все, кроме букв A-Z
+            
+            // Инициализируем счетчики
+            for (let i = 0; i < 26; i++) {
+                const char = String.fromCharCode(65 + i);
+                freq[char] = 0;
+            }
+            
+            // Подсчитываем частоты
+            for (const char of letters) {
+                freq[char]++;
+            }
+            
+            // Преобразуем в проценты
+            const total = letters.length;
+            const percentages = {};
+            for (const char in freq) {
+                percentages[char] = (freq[char] / total) * 100;
+            }
+            
+            return percentages;
+        }
+
+        // Рассчитываем частоты для всех текстов
+        const allFrequencies = encryptedTexts.map(item => ({
+            settings: item.settings,
+            frequencies: calculateFrequencies(item.text)
+        }));
+
+        // Создаем комбинированный график
+        function createCombinedChart() {
+            const ctx = document.getElementById('combinedChart').getContext('2d');
+            const labels = Array.from({length: 26}, (_, i) => String.fromCharCode(65 + i));
+            
+            const datasets = allFrequencies.map((freqData, idx) => {
+                const colors = [
+                    'rgba(255, 99, 132, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)'
+                ];
+                
+                return {
+                    label: freqData.settings,
+                    data: labels.map(char => freqData.frequencies[char]),
+                    backgroundColor: colors[idx],
+                    borderColor: colors[idx].replace('0.7', '1'),
+                    borderWidth: 1,
+                    tension: 0.1
+                };
+            });
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Сравнение частот символов для всех шифртекстов',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Частота (%)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Символ'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Создаем отдельные графики для каждого шифртекста
+        function createIndividualCharts() {
+            allFrequencies.forEach((freqData, idx) => {
+                const ctx = document.getElementById(`chart${idx+1}`).getContext('2d');
+                const labels = Object.keys(freqData.frequencies);
+                const data = Object.values(freqData.frequencies);
+                
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: `Частота символов (${freqData.settings})`,
+                            data: data,
+                            backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: `Частотный анализ: ${freqData.settings}`,
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Частота (%)'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Символ'
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+        // Инициализация графиков
+        window.onload = function() {
+            createCombinedChart();
+            createIndividualCharts();
+        };
+    </script>
+</body>
+</html>

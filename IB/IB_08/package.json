@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chart.js": "^4.4.9"
+  },
+  "devDependencies": {
+    "electron": "^35.2.1"
+  }
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление кафедрами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 20px;
+            padding: 0;
+            line-height: 1.5;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .form-container {
+            width: 450px;
+            margin-left: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #444;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #3a5a80;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        li {
+            padding: 6px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        .error {
+            color: #d32f2f;
+            background: #ffebee;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            display: none;
+        }
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        .radio-label {
+            display: inline-block;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .radio-input {
+            margin-right: 5px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .action-buttons button {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Управление кафедрами</h1>
+        
+        <div id="errorSection" class="error"></div>
+        
+        <div class="form-group">
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input class="radio-input" type="radio" name="action" value="GET" checked> Просмотр
+                </label>
+                <label class="radio-label">
+                    <input class="radio-input" type="radio" name="action" value="POST"> Добавить
+                </label>
+                <label class="radio-label">
+                    <input class="radio-input" type="radio" name="action" value="PUT"> Изменить
+                </label>
+                <label class="radio-label">
+                    <input class="radio-input" type="radio" name="action" value="DELETE"> Удалить
+                </label>
+            </div>
+
+            <div id="get-section">
+                <h2>Список кафедр</h2>
+                <ul id="pulpitList"></ul>
+            </div>
+
+            <div id="post-section" style="display:none">
+                <h2>Добавить новую кафедру</h2>
+                <form id="addPulpitForm">
+                    <input type="text" id="pulpit_name" placeholder="Название кафедры" required>
+                    <input type="text" id="faculty_id" placeholder="ID факультета" required>
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+
+            <div id="put-section" style="display:none">
+                <h2>Изменить кафедру</h2>
+                <form id="updatePulpitForm">
+                    <input type="text" id="update_pulpit_id" placeholder="ID кафедры" required>
+                    <input type="text" id="update_pulpit_name" placeholder="Новое название" required>
+                    <input type="text" id="update_faculty_id" placeholder="ID факультета" required>
+                    <button type="submit">Обновить</button>
+                </form>
+            </div>
+
+            <div id="delete-section" style="display:none">
+                <h2>Удалить кафедру</h2>
+                <form id="deletePulpitForm">
+                    <input type="text" id="delete_pulpit_id" placeholder="ID кафедры" required>
+                    <button type="submit">Удалить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', loadPulpits);
+
+        document.querySelectorAll('input[name="action"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.getElementById('get-section').style.display = 'none';
+                document.getElementById('post-section').style.display = 'none';
+                document.getElementById('put-section').style.display = 'none';
+                document.getElementById('delete-section').style.display = 'none';
+                
+                document.getElementById(this.value.toLowerCase() + '-section').style.display = 'block';
+                
+                if (this.value === 'GET') {
+                    loadPulpits();
+                }
+            });
+        });
+
+        async function loadPulpits() {
+            try {
+                const response = await fetch('http://localhost:3000/api/pulpits');
+                if (!response.ok) throw new Error('Ошибка при загрузке кафедр');
+                const data = await response.json();
+                renderPulpitList(data);
+            } catch (error) {
+                showError(error.message);
+            }
+        }
+
+        function renderPulpitList(pulpits) {
+            const list = document.getElementById('pulpitList');
+            list.innerHTML = '';
+            
+            if (pulpits.length === 0) {
+                list.innerHTML = '<li>Нет данных о кафедрах</li>';
+                return;
+            }
+            
+            pulpits.forEach(pulpit => {
+                const item = document.createElement('li');
+                item.textContent = `${pulpit.pulpit_id}: ${pulpit.pulpit_name} (Факультет: ${pulpit.faculty_id})`;
+                list.appendChild(item);
+            });
+        }
+
+        document.getElementById('addPulpitForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const pulpit_name = document.getElementById('pulpit_name').value;
+            const faculty_id = document.getElementById('faculty_id').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/api/pulpits', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ pulpit_name, faculty_id })
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Ошибка при добавлении');
+                }
+                
+                document.getElementById('addPulpitForm').reset();
+                document.querySelector('input[value="GET"]').click(); // Переключаемся на просмотр
+            } catch (error) {
+                showError(error.message);
+            }
+        });
+
+        document.getElementById('updatePulpitForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const pulpit_id = document.getElementById('update_pulpit_id').value;
+            const pulpit_name = document.getElementById('update_pulpit_name').value;
+            const faculty_id = document.getElementById('update_faculty_id').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/api/pulpits', {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ pulpit_id, pulpit_name, faculty_id })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Ошибка при обновлении');
+                }
+                
+                document.getElementById('updatePulpitForm').reset();
+                document.querySelector('input[value="GET"]').click(); // Переключаемся на просмотр
+            } catch (error) {
+                showError(error.message);
+            }
+        });
+
+        document.getElementById('deletePulpitForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const pulpit_id = document.getElementById('delete_pulpit_id').value;
+
+            try {
+                const response = await fetch(`http://localhost:3000/api/pulpits/${pulpit_id}`, {
+                    method: 'DELETE'
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Ошибка при удалении');
+                }
+                
+                document.getElementById('deletePulpitForm').reset();
+                document.querySelector('input[value="GET"]').click(); // Переключаемся на просмотр
+            } catch (error) {
+                showError(error.message);
+            }
+        });
+
+        function showError(message) {
+            const errorSection = document.getElementById('errorSection');
+            errorSection.textContent = message;
+            errorSection.style.display = 'block';
+            setTimeout(() => errorSection.style.display = 'none', 5000);
+        }
+    </script>
+</body>
+</html>

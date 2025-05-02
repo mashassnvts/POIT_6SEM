@@ -1,0 +1,251 @@
+-- факультет не задан
+query {
+  getFaculties {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+-- факультет задан
+query {
+  getFaculties(FACULTY: "ИЭФ") {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+--преподаватель не задан
+query {
+  getTeachers {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+-- преподаватель задан
+query {
+  getTeachers(TEACHER: "СМЛВ") {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+--кафедра не задана
+query {
+  getPulpits {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+--кафедра задана
+query {
+  getPulpits(PULPIT: "ИСиТ") {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+--предмет не задан
+query {
+  getSubjects {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+--предмет задан
+query {
+  getSubjects(SUBJECT: "СУБД") {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+--добавление нового факультета
+mutation {
+  setFaculty(FACULTY: "NEW", FACULTY_NAME: "New FACULTY") {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+--измение факультета
+mutation {
+  setFaculty(FACULTY: "NEW", FACULTY_NAME: "New FACULTY1") {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+--несуществующий
+mutation {
+  setFaculty(FACULTY: "NEW123323", FACULTY_NAME: "New FACULTY1") {
+    FACULTY
+    FACULTY_NAME
+  }
+}
+
+--новый преподаватель
+mutation {
+  setTeacher(TEACHER: "TEACHER", TEACHER_NAME: "smelov", PULPIT: "ПИ") {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+--измение преподаватель
+mutation {
+  setTeacher(TEACHER: "T001", TEACHER_NAME: "Jane Smith", PULPIT: "P002") {
+    TEACHER
+    TEACHER_NAME
+    PULPIT
+  }
+}
+
+--новая кафедра
+mutation {
+  setPulpit(PULPIT: "PULPIT", PULPIT_NAME: "PULPIT NAME", FACULTY: "ИТ") {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+--измение кафедры
+mutation {
+  setPulpit(PULPIT: "PULPIT", PULPIT_NAME: "PULPIT NAME1", FACULTY: "ИТ") {
+    PULPIT
+    PULPIT_NAME
+    FACULTY
+  }
+}
+
+--новый предмет
+mutation {
+  setSubject(SUBJECT: "SUBJECT", SUBJECT_NAME: "SUBJECT NAME", PULPIT: "PULPIT") {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+--измение предмет
+mutation {
+  setSubject(SUBJECT: "SUBJECT", SUBJECT_NAME: "SUBJECT NAME1", PULPIT: "PULPIT") {
+    SUBJECT
+    SUBJECT_NAME
+    PULPIT
+  }
+}
+
+--удаление факультета
+   mutation {
+     delFaculty(FACULTY: "NEW") {
+       FACULTY
+       FACULTY_NAME
+     }
+   }
+
+--несуществующий
+mutation {
+     delFaculty(FACULTY: "2345678") {
+       FACULTY
+       FACULTY_NAME
+     }
+   }
+
+--удаление преподаватель
+   mutation {
+  delTeacher (TEACHER: "TEACHER")  {
+    TEACHER
+    TEACHER_NAME
+  }
+}  
+
+--несуществующий
+mutation {
+  delTeacher (TEACHER: "TEA324567CHER")  {
+    TEACHER
+    TEACHER_NAME
+  }
+}  
+
+--удаление кафедры
+mutation {
+  delPulpit(PULPIT: "ЛВ") {
+     PULPIT
+    PULPIT_NAME
+  }
+}
+
+-- несуществующий
+mutation {
+  delPulpit(PULPIT: "ЛВ34") {
+     PULPIT
+    PULPIT_NAME
+  }
+}
+
+--удаление предмет
+mutation {
+  delSubject(SUBJECT: "ПЭ"){ 
+  SUBJECT
+    SUBJECT_NAME
+  }
+}
+
+--удаление несуществующий
+mutation {
+  delSubject(SUBJECT: "ПЭ23"){ 
+  SUBJECT
+    SUBJECT_NAME
+  }
+}
+
+--все преподаватели для факультета
+query {
+  getTeachersByFaculty(FACULTY: "ИЭФ") {
+    FACULTY
+    TEACHERS {
+      TEACHER
+      TEACHER_NAME
+      PULPIT
+    }
+  }
+}
+
+query {
+  getSubjectsByFaculties(FACULTY: "ИЭФ") {
+    FACULTY
+    PULPIT
+    PULPIT_NAME
+    SUBJECTS {
+      SUBJECT
+      SUBJECT_NAME
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

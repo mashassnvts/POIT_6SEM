@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .product-list, .product-form {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .product-item button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Management</h1>
+
+    <div class="product-list">
+        <h2>Product List</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+        <button onclick="showCreateForm()">Add New Product</button>
+    </div>
+
+    <div class="product-form" id="productForm" style="display:none;">
+        <h2>Add Product</h2>
+        <form id="createProductForm">
+            <label>Name: <input type="text" id="name" required></label><br>
+            <label>Price: <input type="number" id="price" required></label><br>
+            <label>Category: <input type="text" id="category" required></label><br>
+            <label>Stock: <input type="number" id="stock" required></label><br>
+            <button type="submit">Save Product</button>
+        </form>
+        <button onclick="cancelCreate()">Cancel</button>
+    </div>
+
+    <script>
+        // Fetch and display product list
+        function loadProducts() {
+            fetch('/api/products')
+                .then(response => response.json())
+                .then(data => {
+                    const productList = document.getElementById("productList");
+                    productList.innerHTML = '';
+                    data.forEach(product => {
+                        const row = document.createElement("tr");
+                        row.classList.add("product-item");
+                        row.innerHTML = `
+                            <td>${product.name}</td>
+                            <td>${product.price}</td>
+                            <td>${product.category}</td>
+                            <td>${product.stock}</td>
+                            <td>
+                                <button onclick="viewProduct(${product.id})">View</button>
+                                <button onclick="editProduct(${product.id})">Edit</button>
+                                <button onclick="deleteProduct(${product.id})">Delete</button>
+                            </td>
+                        `;
+                        productList.appendChild(row);
+                    });
+                });
+        }
+
+        function viewProduct(id) {
+            fetch(`/api/products/${id}`)
+                .then(response => response.json())
+                .then(product => {
+                    alert(`Name: ${product.name}\nPrice: $${product.price}\nCategory: ${product.category}\nStock: ${product.stock}`);
+                });
+        }
+
+        function editProduct(id) {
+            fetch(`/api/products/${id}`)
+                .then(response => response.json())
+                .then(product => {
+                    document.getElementById("name").value = product.name;
+                    document.getElementById("price").value = product.price;
+                    document.getElementById("category").value = product.category;
+                    document.getElementById("stock").value = product.stock;
+                    document.getElementById("createProductForm").onsubmit = function(event) {
+                        event.preventDefault();
+                        updateProduct(id);
+                    };
+                    showCreateForm();
+                });
+        }
+
+        function createProduct(event) {
+            event.preventDefault();
+            const newProduct = {
+                name: document.getElementById("name").value,
+                price: document.getElementById("price").value,
+                category: document.getElementById("category").value,
+                stock: document.getElementById("stock").value
+            };
+
+            fetch('/api/products', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newProduct)
+            })
+            .then(() => {
+                loadProducts();
+                cancelCreate();
+            });
+        }
+
+        function updateProduct(id) {
+            const updatedProduct = {
+                name: document.getElementById("name").value,
+                price: document.getElementById("price").value,
+                category: document.getElementById("category").value,
+                stock: document.getElementById("stock").value
+            };
+
+            fetch(`/api/products/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(updatedProduct)
+            })
+            .then(() => {
+                loadProducts();
+                cancelCreate();
+            });
+        }
+
+        function deleteProduct(id) {
+            fetch(`/api/products/${id}`, {
+                method: 'DELETE'
+            })
+            .then(() => loadProducts());
+        }
+
+        function showCreateForm() {
+            document.getElementById("productForm").style.display = 'block';
+        }
+
+        function cancelCreate() {
+            document.getElementById("productForm").style.display = 'none';
+            document.getElementById("createProductForm").reset();
+        }
+
+        loadProducts();
+        document.getElementById("createProductForm").onsubmit = createProduct;
+    </script>
+</body>
+</html>

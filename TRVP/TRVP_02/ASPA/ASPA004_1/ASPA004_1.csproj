@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Data\data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL004\DAL004.csproj" />
+  </ItemGroup>
+
+</Project>

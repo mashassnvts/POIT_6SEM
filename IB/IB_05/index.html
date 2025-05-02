@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование перестановкой</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        textarea, input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        textarea:focus, input:focus, select:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .params {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .params div {
+            flex: 1;
+        }
+
+        button {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            min-height: 100px;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+        }
+
+        .file-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .histograms {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .histogram-container {
+            flex: 1;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .histogram-title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .histogram {
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            border-bottom: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .bar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        .bar {
+            width: 20px;
+            background: linear-gradient(to top, #3498db, #2ecc71);
+            margin: 0 5px;
+            position: relative;
+            transition: height 0.5s ease;
+        }
+
+        .bar-label {
+            margin-top: 5px;
+            font-size: 12px;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: center;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -20px;
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Шифрование перестановкой</h1>
+        
+        <div class="form-group">
+            <label for="text">Введите текст (не менее 500 символов):</label>
+            <textarea id="text" placeholder="Введите текст для шифрования/расшифрования..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="method">Метод шифрования:</label>
+            <select id="method">
+                <option value="spiral">Маршрутная перестановка (по спирали)</option>
+                <option value="multiple">Множественная перестановка</option>
+            </select>
+        </div>
+
+        <div id="spiralParams" class="params">
+            <div>
+                <label for="rows">Количество строк (автоматически):</label>
+                <input type="number" id="rows" min="2" max="20" readonly>
+            </div>
+            <div>
+                <label for="cols">Количество столбцов (автоматически):</label>
+                <input type="number" id="cols" min="2" max="20" readonly>
+            </div>
+        </div>
+
+        <div id="multipleParams" class="params" style="display: none;">
+            <div>
+                <label for="firstName">Имя (первое ключевое слово):</label>
+                <input type="text" id="firstName" value="Иван">
+            </div>
+            <div>
+                <label for="lastName">Фамилия (второе ключевое слово):</label>
+                <input type="text" id="lastName" value="Петров">
+            </div>
+        </div>
+
+        <button id="encryptBtn" type="button" onclick="encrypt()">Зашифровать</button>
+        <button id="decryptBtn" type="button" onclick="decrypt()">Расшифровать</button>
+
+        <h2>Результат:</h2>
+        <div id="result"></div>
+
+        <div class="histograms">
+            <div class="histogram-container">
+                <div class="histogram-title">Гистограмма исходного текста</div>
+                <div id="originalHistogram" class="histogram"></div>
+            </div>
+            <div class="histogram-container">
+                <div class="histogram-title">Гистограмма зашифрованного текста</div>
+                <div id="encryptedHistogram" class="histogram"></div>
+            </div>
+        </div>
+
+        <div class="file-section">
+            <h2>Работа с файлами</h2>
+            <div class="form-group">
+                <label for="file">Выберите текстовый файл:</label>
+                <input type="file" id="file" accept=".txt">
+            </div>
+            <button id="encryptFileBtn" type="button" onclick="processFile('encrypt')">Зашифровать файл</button>
+            <button id="decryptFileBtn" type="button" onclick="processFile('decrypt')">Расшифровать файл</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

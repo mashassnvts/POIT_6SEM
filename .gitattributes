@@ -1,2 +1,1 @@
 PIRBDIP/PIRBDIP_04/Карта/drc-landcover-ge.shp filter=lfs diff=lfs merge=lfs -text
-PIRBDIP/PIRBDIP_04/Карта/*.shp filter=lfs diff=lfs merge=lfs -text
