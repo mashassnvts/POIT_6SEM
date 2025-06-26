@@ -1,0 +1,14 @@
+emcc func.c -o func.js -s EXPORTED_FUNCTIONS="['_sum', '_mul', '_sub']" -s WASM=1
+
+
+
+cd .\emsdk\
+.\emsdk.bat update
+git pull
+.\emsdk.bat update
+.\emsdk install latest
+.\emsdk activate latest
+.\emsdk_env.bat
+emcc --version
+
+

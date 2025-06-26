@@ -1,0 +1,12 @@
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\bin\Debug\net8.0\DAL_Celebrity.deps.json
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\bin\Debug\net8.0\DAL_Celebrity.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\bin\Debug\net8.0\DAL_Celebrity.pdb
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.csproj.AssemblyReference.cache
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.GeneratedMSBuildEditorConfig.editorconfig
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.AssemblyInfoInputs.cache
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.AssemblyInfo.cs
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.csproj.CoreCompileInputs.cache
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\refint\DAL_Celebrity.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\DAL_Celebrity.pdb
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\DAL_Celebrity\obj\Debug\net8.0\ref\DAL_Celebrity.dll

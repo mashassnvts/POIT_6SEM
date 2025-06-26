@@ -1,0 +1,2 @@
+wwwroot\celeb.html
+wwwroot\index.html

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Celebrity Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .celebrity-details {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+            .celebrity-details img {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+            p strong {
+                color: #333;
+            }
+    </style>
+</head>
+<body>
+    <div class="celebrity-details" id="celebrityDetails">
+        <p>Loading celebrity details...</p>
+    </div>
+
+    <script>
+        async function loadCelebrityDetails() {
+            const celebrityDetailsDiv = document.getElementById('celebrityDetails');
+            const pathSegments = window.location.pathname.split('/');
+            const celebrityId = pathSegments[pathSegments.length - 1];
+
+            if (!celebrityId) {
+                celebrityDetailsDiv.innerHTML = '<p>Celebrity ID not found in URL.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/Celebrities/${celebrityId}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const celebrity = await response.json();
+                celebrityDetailsDiv.innerHTML = `
+                        <h1>${celebrity.fullName}</h1>
+                        <img src="/api/Celebrities/photo/${celebrity.reqPhotoPath}" alt="${celebrity.fullName}">
+                        <p><strong>Nationality:</strong> ${celebrity.nationality}</p>
+                        <p><strong>Biography:</strong> ${celebrity.biography || 'No biography available.'}</p>`;
+            } catch (error) {
+                console.error('Error loading celebrity details:', error);
+                celebrityDetailsDiv.innerHTML = `<p>Error loading celebrity details: ${error.message}</p>`;
+            }
+        }
+
+        window.onload = loadCelebrityDetails;
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'93ec88619d0fbaea',t:'MTc0NzA4MDM0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+</html>

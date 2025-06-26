@@ -1,0 +1,251 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+    "name": "Celebrities API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Celebrities",
+      "item": [
+        {
+          "name": "Get all celebrities",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities"]
+            }
+          }
+        },
+        {
+          "name": "Get celebrity by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities/7",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities", "7"]
+            }
+          }
+        },
+        {
+          "name": "Get celebrity by Lifeevent ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities/Lifeevents/7",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities", "Lifeevents", "7"]
+            }
+          }
+        },
+        {
+          "name": "Delete celebrity",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities/4",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities", "4"]
+            }
+          }
+        },
+        {
+          "name": "Add new celebrity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\":    \"Ершов Андрей\",\n  \"nationality\": \"RU\",\n  \"reqPhotoPath\":\"Ershov.jpg\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities"]
+            }
+          }
+        },
+        {
+          "name": "Update celebrity",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fullName\":    \"Ершов Андрей Петрович\",\n  \"nationality\": \"RU\",\n  \"reqPhotoPath\":\"Ershov.jpg\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities/13",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities", "13"]
+            }
+          }
+        },
+        {
+          "name": "Get celebrity photo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Celebrities/photo/Ershov.jpg",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Celebrities", "photo", "Ershov.jpg"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lifeevents",
+      "item": [
+        {
+          "name": "Get all lifeevents",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Lifeevents",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Lifeevents"]
+            }
+          }
+        },
+        {
+          "name": "Get lifeevent by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Lifeevents/10",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Lifeevents", "10"]
+            }
+          }
+        },
+        {
+          "name": "Get lifeevents by celebrity ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Lifeevents/Celebrities/3",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Lifeevents", "Celebrities", "3"]
+            }
+          }
+        },
+        {
+          "name": "Delete lifeevent",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5204/api/Lifeevents/10",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Lifeevents", "10"]
+            }
+          }
+        },
+        {
+          "name": "Add new lifeevent",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"celebrityId\": 13,\n  \"date\": \"1931-04-19T00:00:00\",\n  \"description\": \"Дата рождения\",\n  \"reqPhotoPath\": null\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Lifeevents",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Lifeevents"]
+            }
+          }
+        },
+        {
+          "name": "Update lifeevent",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"celebrityId\": 13,\n  \"date\": \"1931-04-19T00:00:00\",\n  \"description\": \"Дата рождения. Москва.\",\n  \"reqPhotoPath\": null\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5204/api/Lifeevents/24",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5204",
+              "path": ["api", "Lifeevents", "24"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "hp",
+      "value": "http://localhost:5204"
+    },
+    {
+      "key": "capi",
+      "value": "/api/Celebrities"
+    },
+    {
+      "key": "lapi",
+      "value": "/api/Lifeevents"
+    }
+  ]
+}

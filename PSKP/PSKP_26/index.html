@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        async function loadWasm() {
+            const response = await fetch('func.wasm');
+            const bytes = await response.arrayBuffer();
+            const wasmModule = await WebAssembly.instantiate(bytes);
+
+            const { sum, mul, sub } = wasmModule.instance.exports;
+
+            document.getElementById('sumResult').textContent = `sum(78, 2) = ${sum(78, 2)}`;
+            document.getElementById('mulResult').textContent = `mul(10, 20) = ${mul(10, 20)}`;
+            document.getElementById('subResult').textContent = `sub(100, 1) = ${sub(100, 1)}`;
+        }
+        loadWasm();
+    </script>
+</head>
+<body>
+    <div class="result" id="sumResult"></div>
+    <div class="result" id="mulResult"></div>
+    <div class="result" id="subResult"></div>
+</body>
+</html>

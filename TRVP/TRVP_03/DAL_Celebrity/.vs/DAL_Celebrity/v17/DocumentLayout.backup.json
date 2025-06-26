@@ -1,0 +1,232 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\aspa006_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|solutionrelative:aspa006_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\aspa006_1\\exceptionmanagermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|solutionrelative:aspa006_1\\exceptionmanagermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\aspa006_1\\app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|solutionrelative:aspa006_1\\app.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\aspa006_1\\wwwroot\\js\\celebrities.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|solutionrelative:aspa006_1\\wwwroot\\js\\celebrities.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\aspa006_1\\celebritiesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|solutionrelative:aspa006_1\\celebritiesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\aspa006_1\\celebrities.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E968BC4-FED0-4CD6-87E3-F74EC530F525}|ASPA006_1\\ASPA006_1.csproj|solutionrelative:aspa006_1\\celebrities.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023CD0C4-03C4-4A45-93D1-17B3BD5D0F9A}|DAL_Celebrity_MSSQL\\DAL_Celebrity_MSSQL.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\dal_celebrity_mssql\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023CD0C4-03C4-4A45-93D1-17B3BD5D0F9A}|DAL_Celebrity_MSSQL\\DAL_Celebrity_MSSQL.csproj|solutionrelative:dal_celebrity_mssql\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B03F8A-94D5-4E79-A226-551800007558}|DAL_Celebrity\\DAL_Celebrity.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\dal_celebrity\\dal_celebrity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B03F8A-94D5-4E79-A226-551800007558}|DAL_Celebrity\\DAL_Celebrity.csproj|solutionrelative:dal_celebrity\\dal_celebrity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B03F8A-94D5-4E79-A226-551800007558}|DAL_Celebrity\\DAL_Celebrity.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\dal_celebrity\\celebrityirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B03F8A-94D5-4E79-A226-551800007558}|DAL_Celebrity\\DAL_Celebrity.csproj|solutionrelative:dal_celebrity\\celebrityirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023CD0C4-03C4-4A45-93D1-17B3BD5D0F9A}|DAL_Celebrity_MSSQL\\DAL_Celebrity_MSSQL.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\dal_celebrity_mssql\\celebritycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023CD0C4-03C4-4A45-93D1-17B3BD5D0F9A}|DAL_Celebrity_MSSQL\\DAL_Celebrity_MSSQL.csproj|solutionrelative:dal_celebrity_mssql\\celebritycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023CD0C4-03C4-4A45-93D1-17B3BD5D0F9A}|DAL_Celebrity_MSSQL\\DAL_Celebrity_MSSQL.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\dal_celebrity_mssql\\celebrityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023CD0C4-03C4-4A45-93D1-17B3BD5D0F9A}|DAL_Celebrity_MSSQL\\DAL_Celebrity_MSSQL.csproj|solutionrelative:dal_celebrity_mssql\\celebrityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1EF31D8-07E6-49D0-BE9A-259AD5FF2983}|DAL_Celebrity_MSSQL_Test\\DAL_Celebrity_MSSQL_Test.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_03\\dal_celebrity\\dal_celebrity_mssql_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1EF31D8-07E6-49D0-BE9A-259AD5FF2983}|DAL_Celebrity_MSSQL_Test\\DAL_Celebrity_MSSQL_Test.csproj|solutionrelative:dal_celebrity_mssql_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CelebrityIRepository.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity\\CelebrityIRepository.cs",
+              "RelativeDocumentMoniker": "DAL_Celebrity\\CelebrityIRepository.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity\\CelebrityIRepository.cs",
+              "RelativeToolTip": "DAL_Celebrity\\CelebrityIRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:51:07.694Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DAL_Celebrity.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity\\DAL_Celebrity.cs",
+              "RelativeDocumentMoniker": "DAL_Celebrity\\DAL_Celebrity.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity\\DAL_Celebrity.cs",
+              "RelativeToolTip": "DAL_Celebrity\\DAL_Celebrity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:51:12.191Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CelebrityRepository.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL\\CelebrityRepository.cs",
+              "RelativeDocumentMoniker": "DAL_Celebrity_MSSQL\\CelebrityRepository.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL\\CelebrityRepository.cs",
+              "RelativeToolTip": "DAL_Celebrity_MSSQL\\CelebrityRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:51:41.213Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CelebrityContext.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL\\CelebrityContext.cs",
+              "RelativeDocumentMoniker": "DAL_Celebrity_MSSQL\\CelebrityContext.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL\\CelebrityContext.cs",
+              "RelativeToolTip": "DAL_Celebrity_MSSQL\\CelebrityContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:59:20.114Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Init.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL\\Init.cs",
+              "RelativeDocumentMoniker": "DAL_Celebrity_MSSQL\\Init.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL\\Init.cs",
+              "RelativeToolTip": "DAL_Celebrity_MSSQL\\Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:59:21.878Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL_Test\\Program.cs",
+              "RelativeDocumentMoniker": "DAL_Celebrity_MSSQL_Test\\Program.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\DAL_Celebrity_MSSQL_Test\\Program.cs",
+              "RelativeToolTip": "DAL_Celebrity_MSSQL_Test\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:18:14.695Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CelebritiesConfig.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\CelebritiesConfig.cs",
+              "RelativeDocumentMoniker": "ASPA006_1\\CelebritiesConfig.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\CelebritiesConfig.cs",
+              "RelativeToolTip": "ASPA006_1\\CelebritiesConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:18:40.995Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\Program.cs",
+              "RelativeDocumentMoniker": "ASPA006_1\\Program.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\Program.cs",
+              "RelativeToolTip": "ASPA006_1\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvykAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:18:38.958Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionManagerMiddleware.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\ExceptionManagerMiddleware.cs",
+              "RelativeDocumentMoniker": "ASPA006_1\\ExceptionManagerMiddleware.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\ExceptionManagerMiddleware.cs",
+              "RelativeToolTip": "ASPA006_1\\ExceptionManagerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:18:14.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Celebrities.config.json",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\Celebrities.config.json",
+              "RelativeDocumentMoniker": "ASPA006_1\\Celebrities.config.json",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\Celebrities.config.json",
+              "RelativeToolTip": "ASPA006_1\\Celebrities.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T11:02:16.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Celebrities.js",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\js\\Celebrities.js",
+              "RelativeDocumentMoniker": "ASPA006_1\\wwwroot\\js\\Celebrities.js",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\js\\Celebrities.js",
+              "RelativeToolTip": "ASPA006_1\\wwwroot\\js\\Celebrities.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-03T10:53:48.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.http",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\app.http",
+              "RelativeDocumentMoniker": "ASPA006_1\\app.http",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\app.http",
+              "RelativeToolTip": "ASPA006_1\\app.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-03T09:06:57.696Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

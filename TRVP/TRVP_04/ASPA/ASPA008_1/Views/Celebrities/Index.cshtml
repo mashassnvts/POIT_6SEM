@@ -1,0 +1,49 @@
+﻿@using ASPA008_1.Helpers
+@using DAL_Celebrity
+@model ASPA008_1.Controllers.CelebritiesController.IndexModel
+@{
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <h2 class="text-center mb-4">Знаменитости</h2>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <a asp-controller="Celebrities" asp-action="NewHumanForm" class="btn-link">
+                <i class="fas fa-plus"></i> Добавить знаменитость
+            </a>
+        </div>
+    </div>
+    <div class="celebrities-list">
+        @foreach (var celebrity in Model.Celebrities)
+        {
+            @Html.CelebrityPhoto(celebrity.Id, celebrity.FullName, $"{Model.PhotosRequestPath}/{celebrity.ReqPhotoPath}")
+        }
+    </div>
+</div>
+
+<style>
+    .celebrities-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .celebrity-item {
+        text-align: center;
+        width: 235px;
+    }
+    
+    .celebrity-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .celebrity-image:hover {
+        transform: scale(1.05);
+    }
+</style>

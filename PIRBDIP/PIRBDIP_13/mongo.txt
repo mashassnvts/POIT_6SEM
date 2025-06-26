@@ -1,0 +1,202 @@
+Добавить данные в коллекции. Изменить и обновить несколько элементов коллекций.
+
+db.orders.insertMany([
+  {
+    "order_id": "ORD1001",
+    "customer_email": "alex@example.com",
+    "products": ["Smartphone X5 Pro", "Smartphone Y3"],
+    "order_date": new Date("2025-05-10"),
+    "total_amount": 1599.98,
+    "status": "completed"
+  },
+  {
+    "order_id": "ORD1002",
+    "customer_email": "maria@example.com",
+    "products": ["Smartphone X5 Pro1"],
+    "order_date": new Date("2025-05-12"),
+    "total_amount": 999.99,
+    "status": "shipped"
+  },
+  {
+    "order_id": "ORD1003",
+    "customer_email": "alex@example.com",
+    "products": ["Smartphone Y3"],
+    "order_date": new Date("2025-05-15"),
+    "total_amount": 599.99,
+    "status": "processing"
+  }
+])
+
+db.products.insertMany([
+  {
+    "product_id": "P1001",
+    "name": "Smartphone X5 Pro",
+    "brand": "TechCorp",
+    "price": 999.99,
+    "stock": 30,
+    "categories": ["phones", "mobile", "premium"],
+    "specs": {
+      "ram": "12GB",
+      "storage": "256GB"
+    },
+    "is_active": true
+  },
+  {
+    "product_id": "P1002",
+    "name": "Smartphone Y3",
+    "brand": "TechCorp",
+    "price": 599.99,
+    "stock": 75,
+    "categories": ["phones", "mobile", "budget"],
+    "specs": {
+      "ram": "6GB",
+      "storage": "64GB"
+    },
+    "is_active": true
+  },
+  {
+    "product_id": "P1003",
+    "name": "Smartphone X5 Pro1",
+    "brand": "TechCorp",
+    "price": 999.99,
+    "stock": 30,
+    "categories": ["phones", "mobile", "premium"],
+    "specs": {
+      "ram": "12GB",
+      "storage": "256GB"
+    },
+    "is_active": true
+  }
+])
+
+
+db.products.updateMany(
+  { "categories": "budget" },
+  { $set: { "discount": 15 } }
+)
+
+db.products.updateMany(
+  { "categories": "premium" },
+  { $mul: { "price": 0.9 } } )
+
+db.orders.updateOne(
+  { "order_id": "ORD1003" },
+  { $set: { "status": "shipped" } }
+)
+
+db.orders.updateMany(
+  { "status": "shipped" },
+  { $set: { "shipping_date": new Date() } }
+)
+
+db.products.find().pretty()
+db.orders.find().pretty()
+
+
+4.	Произвести выборку элементов, используя условные операции, операторы работы с массивами, операторы $exists, $type, $regex.
+db.orders.find({ "total_amount": { $gt: 1000 } })
+db.products.find({ "stock": { $lt: 50 } })
+db.orders.find({ "products": "Smartphone Y3" })
+db.products.find({ "categories": { $in: ["mobile", "premium"] } })
+db.orders.find({ "total_amount": { $type: "number" } })
+db.orders.find({ 
+  "customer_email": { 
+    $regex: /^alex/, 
+    $options: "i" 
+  } 
+})
+
+
+5.	Произвести выборку элементов в своей базе данных, используя проекции.
+db.products.find({}, { "product_id": 1, "name": 1, "_id": 0 })
+db.orders.find({}, { "products": 0 })
+
+6.	С помощью функции count() получить число всех элементов любой коллекции, а также число элементов с заданным фильтром.
+db.products.countDocuments({})
+db.orders.countDocuments({})
+db.products.countDocuments({ "brand": "TechCorp" })
+db.products.countDocuments({ "discount": { $exists: true } })
+
+7.	Продемонстрировать использование методов limit() и skip().
+db.products.find().limit(2)
+db.orders.find()
+  .sort({ "order_date": -1 })
+  .limit(5)
+db.products.find().skip(1)
+
+1.	Создать запросы с функцией distinct().
+db.products.distinct("brand")
+db.products.distinct("categories")
+db.orders.distinct("status")
+
+
+9.	Используя метод aggregate(), продемонстрировать работу агрегатных операций. 
+db.products.aggregate([
+  {
+    $group: {
+      _id: null,
+      averagePrice: { $avg: "$price" },
+      totalItems: { $sum: 1 }
+    }
+  }
+])
+
+db.products.aggregate([
+  {
+    $group: {
+      _id: "$brand",
+      count: { $sum: 1 },
+      avgPrice: { $avg: "$price" },
+      maxPrice: { $max: "$price" }
+    }
+  }
+])
+db.orders.aggregate([
+  {
+    $group: {
+      _id: {
+        status: "$status",
+        customer: "$customer_email"
+      },
+      order_count: { $sum: 1 }
+    }
+  },
+  { $sort: { "_id.status": 1 } }
+])
+
+
+10.	Продемонстрировать использование пустого и непустого фильтра в секции match, группировку по нескольким ключам.
+// 2. Группировка по бренду с подсчетом товаров и средней цены
+db.products.aggregate([
+  {
+    $match: {} 
+  },
+  {
+    $group: {
+      _id: "$brand",
+      totalProducts: { $sum: 1 },
+      avgPrice: { $avg: "$price" }
+    }
+  }
+])
+
+// 2. Непустой фильтр в $match (только товары с остатком меньше 50)
+db.products.aggregate([
+  {
+    $match: {
+      stock: { $lt: 50 } // Непустой
+// 3. Группировка товаров по бренду и наличию скидки
+db.products.aggregate([
+  {
+    $match: {
+      stock: { $lt: 50 } // Непустой фильтр - только товары с stock < 50
+    }
+  },
+  {
+    $group: {
+      _id: "$brand",
+      lowStockProducts: { $sum: 1 },
+      minStock: { $min: "$stock" }
+    }
+  }
+])

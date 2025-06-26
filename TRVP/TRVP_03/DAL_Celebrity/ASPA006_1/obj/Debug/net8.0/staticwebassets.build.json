@@ -1,0 +1,1567 @@
+{
+  "Version": 1,
+  "Hash": "SicHkg+qK/uHzkWOPLuHhzg0JgSXmcLcAkQgQ20Y2fs=",
+  "Source": "ASPA006_1",
+  "BasePath": "_content/ASPA006_1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASPA006_1\\wwwroot",
+      "Source": "ASPA006_1",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Babbage.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Babbage#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s1oil9w13g",
+      "Integrity": "wHxl8jthmRzPUkbsErPOR7ZZ8P26NqF/NMoRAW/MAWU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Babbage.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Berners-Lee.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Berners-Lee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5mtin2tn23",
+      "Integrity": "k0q1BufUOI3W81rsrXDNXAj+YAjCMOLDhoLSN8cnAKo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Berners-Lee.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Chomsky.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Chomsky#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r8uwon8z0j",
+      "Integrity": "G3U6B3Q0Hn4ubVgXdSabHlLKqGuANLfwNJ+SyMrl88c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Chomsky.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Codd.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Codd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6m2n2lyd1y",
+      "Integrity": "/oIFU7xUhacYJXMqK56CnlcklpGYTuMV9sKYwtyih1M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Codd.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\default.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/default#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bvtxlo16b0",
+      "Integrity": "dzphwVMYq8FsYmutJXJcMHIGzDF9KhoEy8fNw3VvuaE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\default.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Dijkstra.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Dijkstra#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3nlkn4zddf",
+      "Integrity": "jyGoS1Z7fzsm7ob/6L6vWFPw/2rx5/QBNgDyd1NVEMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Dijkstra.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Ershov.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Ershov#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "awnmr0k2yl",
+      "Integrity": "hiLskoJMngfVh7HHNYM5OhBujGp+iS3ytGLJZyKO68A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Ershov.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Huntington.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Huntington#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "po1ib9rsjh",
+      "Integrity": "CTgj0hZ7FLZSN0DLGGP/zvNcYG17JUEPl3GU4e452KU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Huntington.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Knuth.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Knuth#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8avq2ns9bz",
+      "Integrity": "IOE3JFSqqTGIDU6Bk9etV2gfhCzq5HJOHnz7heYlMfc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Knuth.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Linus.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Linus#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "abb67tegxc",
+      "Integrity": "xllk4you3W9ZIvz0S8iKprJWZw1gOPzLCU8oaszZ0E8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Linus.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Lovelace.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Lovelace#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "76s26upxk3",
+      "Integrity": "4TamyQVXHnvYOsceGf1zdSMQQBfWaNBrqXQwAVgntxs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Lovelace.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Neumann.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Neumann#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d289ortl9w",
+      "Integrity": "FQVGry6ceEA0Oz0/5lspDYCsSvEUggHvQhSDKY1Fjh8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Neumann.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Tanenbaum.jpg",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Images/Tanenbaum#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rt9qlxvxwk",
+      "Integrity": "Pz3lWvUC2oZcv65S69xxTs3j6UhVI2Gh8qZ2vIqQp70=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Tanenbaum.jpg"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Index.html",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "Index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pewmij8a88",
+      "Integrity": "kcv2HvVQ/VNpjgaQCOhWqkYqXutCsVyaPWS19bx4KY4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    },
+    {
+      "Identity": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\js\\Celebrities.js",
+      "SourceId": "ASPA006_1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\",
+      "BasePath": "_content/ASPA006_1",
+      "RelativePath": "js/Celebrities#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tplupaazgo",
+      "Integrity": "j7XF3l3jYbyOsRll5prOgu2RSWedUXvoGZH4UT86gtQ=",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Celebrities.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Images/Babbage.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Babbage.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHxl8jthmRzPUkbsErPOR7ZZ8P26NqF/NMoRAW/MAWU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHxl8jthmRzPUkbsErPOR7ZZ8P26NqF/NMoRAW/MAWU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Babbage.s1oil9w13g.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Babbage.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wHxl8jthmRzPUkbsErPOR7ZZ8P26NqF/NMoRAW/MAWU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1oil9w13g"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Babbage.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wHxl8jthmRzPUkbsErPOR7ZZ8P26NqF/NMoRAW/MAWU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Berners-Lee.5mtin2tn23.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Berners-Lee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k0q1BufUOI3W81rsrXDNXAj+YAjCMOLDhoLSN8cnAKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:11:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mtin2tn23"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Berners-Lee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0q1BufUOI3W81rsrXDNXAj+YAjCMOLDhoLSN8cnAKo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Berners-Lee.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Berners-Lee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k0q1BufUOI3W81rsrXDNXAj+YAjCMOLDhoLSN8cnAKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:11:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0q1BufUOI3W81rsrXDNXAj+YAjCMOLDhoLSN8cnAKo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Chomsky.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Chomsky.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G3U6B3Q0Hn4ubVgXdSabHlLKqGuANLfwNJ+SyMrl88c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:11:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G3U6B3Q0Hn4ubVgXdSabHlLKqGuANLfwNJ+SyMrl88c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Chomsky.r8uwon8z0j.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Chomsky.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G3U6B3Q0Hn4ubVgXdSabHlLKqGuANLfwNJ+SyMrl88c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:11:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r8uwon8z0j"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Chomsky.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G3U6B3Q0Hn4ubVgXdSabHlLKqGuANLfwNJ+SyMrl88c="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Codd.6m2n2lyd1y.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Codd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/oIFU7xUhacYJXMqK56CnlcklpGYTuMV9sKYwtyih1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:12:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6m2n2lyd1y"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Codd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/oIFU7xUhacYJXMqK56CnlcklpGYTuMV9sKYwtyih1M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Codd.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Codd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/oIFU7xUhacYJXMqK56CnlcklpGYTuMV9sKYwtyih1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:12:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/oIFU7xUhacYJXMqK56CnlcklpGYTuMV9sKYwtyih1M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/default.bvtxlo16b0.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\default.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dzphwVMYq8FsYmutJXJcMHIGzDF9KhoEy8fNw3VvuaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 12:42:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bvtxlo16b0"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/default.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dzphwVMYq8FsYmutJXJcMHIGzDF9KhoEy8fNw3VvuaE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/default.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\default.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dzphwVMYq8FsYmutJXJcMHIGzDF9KhoEy8fNw3VvuaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 12:42:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dzphwVMYq8FsYmutJXJcMHIGzDF9KhoEy8fNw3VvuaE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Dijkstra.3nlkn4zddf.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Dijkstra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jyGoS1Z7fzsm7ob/6L6vWFPw/2rx5/QBNgDyd1NVEMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:13:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3nlkn4zddf"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Dijkstra.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jyGoS1Z7fzsm7ob/6L6vWFPw/2rx5/QBNgDyd1NVEMY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Dijkstra.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Dijkstra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jyGoS1Z7fzsm7ob/6L6vWFPw/2rx5/QBNgDyd1NVEMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:13:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jyGoS1Z7fzsm7ob/6L6vWFPw/2rx5/QBNgDyd1NVEMY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Ershov.awnmr0k2yl.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Ershov.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hiLskoJMngfVh7HHNYM5OhBujGp+iS3ytGLJZyKO68A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:31:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "awnmr0k2yl"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Ershov.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hiLskoJMngfVh7HHNYM5OhBujGp+iS3ytGLJZyKO68A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Ershov.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Ershov.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hiLskoJMngfVh7HHNYM5OhBujGp+iS3ytGLJZyKO68A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:31:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hiLskoJMngfVh7HHNYM5OhBujGp+iS3ytGLJZyKO68A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Huntington.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Huntington.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CTgj0hZ7FLZSN0DLGGP/zvNcYG17JUEPl3GU4e452KU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:13:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CTgj0hZ7FLZSN0DLGGP/zvNcYG17JUEPl3GU4e452KU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Huntington.po1ib9rsjh.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Huntington.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CTgj0hZ7FLZSN0DLGGP/zvNcYG17JUEPl3GU4e452KU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:13:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "po1ib9rsjh"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Huntington.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CTgj0hZ7FLZSN0DLGGP/zvNcYG17JUEPl3GU4e452KU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Knuth.8avq2ns9bz.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Knuth.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IOE3JFSqqTGIDU6Bk9etV2gfhCzq5HJOHnz7heYlMfc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8avq2ns9bz"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Knuth.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IOE3JFSqqTGIDU6Bk9etV2gfhCzq5HJOHnz7heYlMfc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Knuth.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Knuth.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IOE3JFSqqTGIDU6Bk9etV2gfhCzq5HJOHnz7heYlMfc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IOE3JFSqqTGIDU6Bk9etV2gfhCzq5HJOHnz7heYlMfc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Linus.abb67tegxc.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Linus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xllk4you3W9ZIvz0S8iKprJWZw1gOPzLCU8oaszZ0E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:12:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "abb67tegxc"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Linus.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xllk4you3W9ZIvz0S8iKprJWZw1gOPzLCU8oaszZ0E8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Linus.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Linus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xllk4you3W9ZIvz0S8iKprJWZw1gOPzLCU8oaszZ0E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:12:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xllk4you3W9ZIvz0S8iKprJWZw1gOPzLCU8oaszZ0E8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Lovelace.76s26upxk3.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Lovelace.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4TamyQVXHnvYOsceGf1zdSMQQBfWaNBrqXQwAVgntxs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:11:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "76s26upxk3"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Lovelace.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4TamyQVXHnvYOsceGf1zdSMQQBfWaNBrqXQwAVgntxs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Lovelace.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Lovelace.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4TamyQVXHnvYOsceGf1zdSMQQBfWaNBrqXQwAVgntxs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:11:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4TamyQVXHnvYOsceGf1zdSMQQBfWaNBrqXQwAVgntxs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Neumann.d289ortl9w.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Neumann.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQVGry6ceEA0Oz0/5lspDYCsSvEUggHvQhSDKY1Fjh8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:13:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d289ortl9w"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Neumann.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQVGry6ceEA0Oz0/5lspDYCsSvEUggHvQhSDKY1Fjh8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Neumann.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Neumann.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQVGry6ceEA0Oz0/5lspDYCsSvEUggHvQhSDKY1Fjh8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 08:13:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQVGry6ceEA0Oz0/5lspDYCsSvEUggHvQhSDKY1Fjh8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Tanenbaum.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Tanenbaum.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pz3lWvUC2oZcv65S69xxTs3j6UhVI2Gh8qZ2vIqQp70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:13:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pz3lWvUC2oZcv65S69xxTs3j6UhVI2Gh8qZ2vIqQp70="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Tanenbaum.rt9qlxvxwk.jpg",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Tanenbaum.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pz3lWvUC2oZcv65S69xxTs3j6UhVI2Gh8qZ2vIqQp70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 12:13:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rt9qlxvxwk"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Tanenbaum.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pz3lWvUC2oZcv65S69xxTs3j6UhVI2Gh8qZ2vIqQp70="
+        }
+      ]
+    },
+    {
+      "Route": "Index.html",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1659"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kcv2HvVQ/VNpjgaQCOhWqkYqXutCsVyaPWS19bx4KY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kcv2HvVQ/VNpjgaQCOhWqkYqXutCsVyaPWS19bx4KY4="
+        }
+      ]
+    },
+    {
+      "Route": "Index.pewmij8a88.html",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1659"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kcv2HvVQ/VNpjgaQCOhWqkYqXutCsVyaPWS19bx4KY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pewmij8a88"
+        },
+        {
+          "Name": "label",
+          "Value": "Index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kcv2HvVQ/VNpjgaQCOhWqkYqXutCsVyaPWS19bx4KY4="
+        }
+      ]
+    },
+    {
+      "Route": "js/Celebrities.js",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\js\\Celebrities.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7XF3l3jYbyOsRll5prOgu2RSWedUXvoGZH4UT86gtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:24:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7XF3l3jYbyOsRll5prOgu2RSWedUXvoGZH4UT86gtQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/Celebrities.tplupaazgo.js",
+      "AssetFile": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\js\\Celebrities.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7XF3l3jYbyOsRll5prOgu2RSWedUXvoGZH4UT86gtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:24:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tplupaazgo"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Celebrities.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7XF3l3jYbyOsRll5prOgu2RSWedUXvoGZH4UT86gtQ="
+        }
+      ]
+    }
+  ]
+}

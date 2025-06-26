@@ -1,0 +1,197 @@
+﻿@model DAL_Celebrity.Celebrity
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = Model.FullName;
+}
+
+<div class="container">
+    <div class="content-wrapper">
+        <div class="header-section">
+            <a asp-action="Index" class="back-link">← Назад к списку</a>
+            <h1>@Model.FullName</h1>
+            <div class="actions">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-link">Редактировать</a>
+                <span class="separator">|</span>
+                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn-link">Удалить</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="photo-section">
+                <img src="@($"{ViewBag.PhotosRequestPath}/{Model.ReqPhotoPath}")" 
+                     alt="@Model.FullName">
+            </div>
+
+            <div class="info-section">
+                <div class="info-block">
+                    <h2>Основная информация</h2>
+                    <div class="info-item">
+                        <span class="label">Национальность:</span>
+                        <span class="value">@Model.Nationality</span>
+                    </div>
+                </div>
+
+                @if (Context.Items.ContainsKey(ASPA008_1.Filters.InfoAsyncActionFilter.Wikipedia))//фильтр
+                {
+                    var wikiData = Context.Items[ASPA008_1.Filters.InfoAsyncActionFilter.Wikipedia] as Dictionary<string, string>;
+                    if (wikiData != null && wikiData.Any())
+                    {
+                        <div class="wiki-block">
+                            <h2>Информация из Википедии</h2>
+                            <div class="wiki-links">
+                                @foreach (var item in wikiData)
+                                {
+                                    <div class="wiki-item">
+                                        <a href="@item.Value" target="_blank" class="wiki-link">@item.Key</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+
+                <div class="events-block">
+                    <h2>События жизни</h2>
+                    <div class="events-list">
+                        @foreach (var lifeEvent in ViewBag.LifeEvents)
+                        {
+                            <div class="event-item">
+                                <span class="event-date">@lifeEvent.Date?.ToShortDateString()</span>
+                                <span class="event-description">@lifeEvent.Description</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .content-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .header-section {
+        margin-bottom: 30px;
+    }
+
+    .back-link {
+        color: #666;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 0 0 10px 0;
+    }
+
+    .actions {
+        margin-top: 10px;
+    }
+
+    .btn-link {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .separator {
+        margin: 0 10px;
+        color: #999;
+    }
+
+    .main-content {
+        display: flex;
+        gap: 30px;
+    }
+
+    .photo-section {
+        flex: 0 0 200px;
+    }
+
+    .photo-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .info-section {
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin: 0 0 15px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+    .label {
+        color: #666;
+        margin-right: 10px;
+    }
+
+    .events-list {
+        margin-top: 20px;
+    }
+
+    .event-item {
+        display: flex;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .event-item:last-child {
+        border-bottom: none;
+    }
+
+    .event-date {
+        flex: 0 0 100px;
+        color: #666;
+    }
+
+    .event-description {
+        flex: 1;
+    }
+
+    .wiki-block {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .wiki-links {
+        margin-top: 10px;
+    }
+
+    .wiki-item {
+        margin-bottom: 10px;
+    }
+
+    .wiki-link {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    .wiki-link:hover {
+        text-decoration: underline;
+    }
+</style>

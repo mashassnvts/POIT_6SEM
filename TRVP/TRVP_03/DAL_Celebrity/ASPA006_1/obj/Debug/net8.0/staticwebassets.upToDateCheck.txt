@@ -1,0 +1,15 @@
+wwwroot\Images\Babbage.jpg
+wwwroot\Images\Berners-Lee.jpg
+wwwroot\Images\Chomsky.jpg
+wwwroot\Images\Codd.jpg
+wwwroot\Images\default.jpg
+wwwroot\Images\Dijkstra.jpg
+wwwroot\Images\Ershov.jpg
+wwwroot\Images\Huntington.jpg
+wwwroot\Images\Knuth.jpg
+wwwroot\Images\Linus.jpg
+wwwroot\Images\Lovelace.jpg
+wwwroot\Images\Neumann.jpg
+wwwroot\Images\Tanenbaum.jpg
+wwwroot\Index.html
+wwwroot\js\Celebrities.js

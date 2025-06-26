@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Celebrities Dictionary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .add-button {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .add-form {
+            display: none;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+        }
+
+            .add-form input,
+            .add-form textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+            }
+
+            .add-form button {
+                padding: 8px 15px;
+                background: #f0f0f0;
+                border: 1px solid #ddd;
+                cursor: pointer;
+            }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .celebrity-card {
+            width: 150px;
+            cursor: pointer;
+        }
+
+            .celebrity-card img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                margin-bottom: 5px;
+            }
+
+            .celebrity-card h3 {
+                margin: 0;
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .celebrity-card p {
+                margin: 3px 0 0 0;
+                font-size: 12px;
+                color: #666;
+            }
+
+        .events-container {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Celebrities Dictionary</h1>
+
+    <div class="add-button" id="addButton">+ Add Celebrity</div>
+
+    <div class="add-form" id="addForm">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="text" id="nationality" placeholder="Nationality" required>
+        <input type="text" id="photo" placeholder="Photo URL" required>
+        <textarea id="biography" placeholder="Biography" rows="3"></textarea>
+        <button id="submitBtn">Submit</button>
+        <button id="cancelBtn">Cancel</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+    <div class="events-container" id="events"></div>
+
+    <script>
+        // DOM elements
+        const addButton = document.getElementById('addButton');
+        const addForm = document.getElementById('addForm');
+        const gallery = document.getElementById('gallery');
+        const eventsContainer = document.getElementById('events');
+
+        // Toggle form visibility
+        addButton.addEventListener('click', () => {
+            addForm.style.display = addForm.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Cancel button
+        document.getElementById('cancelBtn').addEventListener('click', () => {
+            addForm.style.display = 'none';
+        });
+
+        // Load celebrities from API
+        async function loadCelebrities() {
+            try {
+                const response = await fetch('/api/Celebrities');
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const celebrities = await response.json();
+                gallery.innerHTML = '';
+
+                celebrities.forEach(celebrity => {
+                    const card = document.createElement('div');
+                    card.className = 'celebrity-card';
+                    card.innerHTML = `
+                        <img src="/api/Celebrities/photo/${celebrity.reqPhotoPath}" alt="${celebrity.fullName}">
+                        <h3>${celebrity.fullName}</h3>
+                        <p>${celebrity.nationality}</p>
+                    `;
+                    card.addEventListener('click', () => loadEvents(celebrity.id));
+                    gallery.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading celebrities:', error);
+                gallery.innerHTML = '<p>Error loading celebrities. Please try again later.</p>';
+            }
+        }
+
+        // Load events for a celebrity
+        async function loadEvents(celebrityId) {
+            try {
+                const response = await fetch(`/api/Lifeevents/Celebrities/${celebrityId}`);
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const events = await response.json();
+                eventsContainer.innerHTML = '<h2>Life Events</h2>';
+
+                if (events.length === 0) {
+                    eventsContainer.innerHTML += '<p>No events found</p>';
+                    return;
+                }
+
+                events.forEach(event => {
+                    const eventElement = document.createElement('div');
+                    eventElement.innerHTML = `
+                        <p><strong>${new Date(event.date).toLocaleDateString()}</strong></p>
+                        <p>${event.description}</p>
+                    `;
+                    eventsContainer.appendChild(eventElement);
+                });
+            } catch (error) {
+                console.error('Error loading events:', error);
+                eventsContainer.innerHTML = '<p>Error loading events</p>';
+            }
+        }
+
+        // Add new celebrity
+        document.getElementById('submitBtn').addEventListener('click', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                nationality: document.getElementById('nationality').value,
+                reqPhotoPath: document.getElementById('photo').value,
+                biography: document.getElementById('biography').value
+            };
+
+            try {
+                const response = await fetch('/api/Celebrities', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    alert('Celebrity added successfully!');
+                    addForm.style.display = 'none';
+                    document.getElementById('fullName').value = '';
+                    document.getElementById('nationality').value = '';
+                    document.getElementById('photo').value = '';
+                    document.getElementById('biography').value = '';
+                    loadCelebrities();
+                } else {
+                    throw new Error('Failed to add celebrity');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error adding celebrity. Please try again.');
+            }
+        });
+
+        // Initial load
+        loadCelebrities();
+    </script>
+</body>
+</html>

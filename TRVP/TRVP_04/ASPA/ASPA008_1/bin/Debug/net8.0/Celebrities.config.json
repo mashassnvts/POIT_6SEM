@@ -1,0 +1,9 @@
+{
+  "Celebrities": {
+    "PhotosRequestPath": "/photos",
+    "PhotosFolder": "wwwroot/Photos",
+    "TempPhotosFolder": "wwwroot/temp",
+    "ConnectionString": "Data Source=MASHA;Initial Catalog=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True;",
+    "CountryCodesPath": "ContryCodes/ContryCodes.json"
+  }
+}

@@ -1,0 +1,164 @@
+﻿@model DAL_Celebrity.Celebrity
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Редактировать знаменитость";
+}
+
+<div class="container">
+    <div class="content-wrapper">
+        <div class="header-section">
+            <a asp-action="Index" class="back-link">← Назад к списку</a>
+            <h1>Редактировать знаменитость</h1>
+        </div>
+
+        <form asp-action="Edit" enctype="multipart/form-data" class="form-container">
+            <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="ReqPhotoPath" />
+
+            <div class="form-group">
+                <label asp-for="FullName">Полное имя</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="validation-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Nationality">Национальность</label>
+                <select asp-for="Nationality" class="form-control">
+                    <option value="">-- Выберите страну --</option>
+                    @foreach (var country in ViewBag.CountryList)
+                    {
+                        <option value="@country.Value">@country.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="Nationality" class="validation-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="NewPhoto">Новая фотография</label>
+                <input type="file" name="NewPhoto" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="current-photo">
+                <label>Текущая фотография</label>
+                <img src="@($"{ViewBag.PhotosRequestPath}/{Model.ReqPhotoPath}")" 
+                     alt="@Model.FullName" 
+                     class="preview-image">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    .content-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .header-section {
+        margin-bottom: 30px;
+    }
+
+    .back-link {
+        color: #666;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .form-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .form-control:focus {
+        border-color: #666;
+        outline: none;
+    }
+
+    .validation-message {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .validation-summary {
+        color: #dc3545;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #dc3545;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+
+    .current-photo {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .preview-image {
+        max-width: 200px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+
+    .form-actions {
+        margin-top: 30px;
+    }
+
+    .btn-submit {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .btn-submit:hover {
+        background-color: #444;
+    }
+</style>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

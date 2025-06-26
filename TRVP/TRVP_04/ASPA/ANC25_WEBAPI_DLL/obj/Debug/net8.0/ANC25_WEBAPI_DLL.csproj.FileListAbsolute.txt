@@ -1,0 +1,17 @@
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.csproj.AssemblyReference.cache
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.AssemblyInfoInputs.cache
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.AssemblyInfo.cs
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.csproj.CoreCompileInputs.cache
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\ANC25_WEBAPI_DLL.deps.json
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\ANC25_WEBAPI_DLL.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\ANC25_WEBAPI_DLL.pdb
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\DAL_Celebrity.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\DAL_Celebrity_MSSQL.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\DAL_Celebrity.pdb
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\bin\Debug\net8.0\DAL_Celebrity_MSSQL.pdb
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WE.4F8425AC.Up2Date
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\refint\ANC25_WEBAPI_DLL.dll
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ANC25_WEBAPI_DLL.pdb
+D:\masha\university\6_sem\TRVP\TRVP_04\ASPA\ANC25_WEBAPI_DLL\obj\Debug\net8.0\ref\ANC25_WEBAPI_DLL.dll

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .chart-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .chart-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .chart-legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #e0e0e0;
+            border-radius: 5px 5px 0 0;
+            margin: 0 5px;
+        }
+        .tab.active {
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <h2 class="chart-title">Сравнение времени шифрования и расшифрования</h2>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showChart('time')">Время выполнения</div>
+            <div class="tab" onclick="showChart('ratio')">Соотношение Base64/ASCII</div>
+        </div>
+        
+        <div style="position: relative; height: 400px;">
+            <canvas id="timeChart"></canvas>
+            <canvas id="ratioChart" style="display: none;"></canvas>
+        </div>
+        
+        <div class="chart-legend" id="chartLegend"></div>
+    </div>
+
+    <script>
+        const data = {
+            elements: [10000, 100000, 1000000],
+            base64_encrypt: [301, 647, 1469],  // Шифрование Base64
+            base64_decrypt: [213, 327, 698],    // Расшифрование Base64
+            utf8_encrypt: [298, 561, 2943],     // Шифрование UTF-8
+            utf8_decrypt: [456, 806, 4513],     // Расшифрование UTF-8
+            zValues: [10, 100, 1000]
+        };
+
+        const timeCtx = document.getElementById('timeChart').getContext('2d');
+        const timeChart = new Chart(timeCtx, {
+            type: 'bar',
+            data: {
+                labels: data.elements.map(e => e.toLocaleString() + ' эл.'),
+                datasets: [
+                    {
+                        label: 'Base64 - Шифрование',
+                        data: data.base64_encrypt,
+                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Base64 - Расшифрование',
+                        data: data.base64_decrypt,
+                        backgroundColor: 'rgba(54, 162, 235, 0.3)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'ASCII - Шифрование',
+                        data: data.utf8_encrypt,
+                        backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'ASCII - Расшифрование',
+                        data: data.utf8_decrypt,
+                        backgroundColor: 'rgba(255, 99, 132, 0.3)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Время (мс)',
+                            font: {
+                                weight: 'bold'
+                            }
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return value.toLocaleString();
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Количество элементов',
+                            font: {
+                                weight: 'bold'
+                            }
+                        },
+                        stacked: false
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                label += context.parsed.y.toLocaleString() + ' мс';
+                                label += ` (Z=${data.zValues[context.dataIndex]})`;
+                                return label;
+                            }
+                        }
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        const ratioCtx = document.getElementById('ratioChart').getContext('2d');
+        const ratioChart = new Chart(ratioCtx, {
+            type: 'line',
+            data: {
+                labels: data.elements.map(e => e.toLocaleString() + ' эл.'),
+                datasets: [
+                    {
+                        label: 'Соотношение Base64/ASCII (Шифрование)',
+                        data: data.base64_encrypt.map((val, i) => val/data.utf8_encrypt[i]),
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderWidth: 2,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Соотношение Base64/ASCII (Расшифрование)',
+                        data: data.base64_decrypt.map((val, i) => val/data.utf8_decrypt[i]),
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderWidth: 2,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Равное соотношение',
+                        data: new Array(data.elements.length).fill(1),
+                        borderColor: 'rgba(0, 0, 0, 0.3)',
+                        borderWidth: 1,
+                        borderDash: [5, 5],
+                        pointRadius: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Соотношение (Base64/ASCII)',
+                            font: {
+                                weight: 'bold'
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Количество элементов',
+                            font: {
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                label += context.parsed.y.toFixed(2);
+                                label += ` (Z=${data.zValues[context.dataIndex]})`;
+                                return label;
+                            }
+                        }
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        function updateLegend(chart) {
+            const legendContainer = document.getElementById('chartLegend');
+            legendContainer.innerHTML = '';
+            
+            chart.data.datasets.forEach(dataset => {
+                if (dataset.label && !dataset.label.includes('Равное')) {
+                    const legendItem = document.createElement('div');
+                    legendItem.className = 'legend-item';
+                    
+                    const colorBox = document.createElement('div');
+                    colorBox.className = 'legend-color';
+                    colorBox.style.backgroundColor = dataset.backgroundColor || dataset.borderColor;
+                    
+                    const label = document.createElement('span');
+                    label.textContent = dataset.label;
+                    
+                    legendItem.appendChild(colorBox);
+                    legendItem.appendChild(label);
+                    legendContainer.appendChild(legendItem);
+                }
+            });
+        }
+
+        function showChart(chartType) {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            if (chartType === 'time') {
+                document.getElementById('timeChart').style.display = 'block';
+                document.getElementById('ratioChart').style.display = 'none';
+                document.querySelector('.tab:nth-child(1)').classList.add('active');
+                updateLegend(timeChart);
+            } else {
+                document.getElementById('timeChart').style.display = 'none';
+                document.getElementById('ratioChart').style.display = 'block';
+                document.querySelector('.tab:nth-child(2)').classList.add('active');
+                updateLegend(ratioChart);
+            }
+        }
+
+        updateLegend(timeChart);
+    </script>
+</body>
+</html>

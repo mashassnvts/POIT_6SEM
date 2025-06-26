@@ -1,0 +1,6 @@
+{
+  "CelebritiesConfig": {
+    "ConnectionString": "Data Source=MASHA;Initial Catalog=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True;",
+    "PhotoFolder": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images"
+  }
+}

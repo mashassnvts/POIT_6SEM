@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\masha\\university\\6_sem\\PIS\\PIS_04\\3\\ASP006_1\\wwwroot\\celeb.html",
+      "PackagePath": "staticwebassets\\celeb.html"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\PIS\\PIS_04\\3\\ASP006_1\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASP006_1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASP006_1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ASP006_1.props",
+      "PackagePath": "build\\ASP006_1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ASP006_1.props",
+      "PackagePath": "buildMultiTargeting\\ASP006_1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ASP006_1.props",
+      "PackagePath": "buildTransitive\\ASP006_1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

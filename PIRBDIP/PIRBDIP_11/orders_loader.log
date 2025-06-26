@@ -1,0 +1,62 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Tue May 13 10:45:12 2025
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   orders_loader.ctl
+Data File:      orders_data.txt
+  Bad File:     orders_bad.bad
+  Discard File: orders_discard.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table ORDERS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                  FIRST     *   |       CHARACTER            
+CUSTOMER_ID                          NEXT     *   |       CHARACTER            
+ORDER_DATE                           NEXT     *   |       DATETIME YYYY-MM-DD HH24:MI:SS
+STATUS                               NEXT     *   |       CHARACTER            
+    SQL string for column : "UPPER(:status)"
+
+The following index(es) on table ORDERS were processed:
+index C##LOAD.SYS_C009393 loaded successfully with 4 keys
+
+Table ORDERS:
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date cache:
+   Max Size:      1000
+   Entries :         4
+   Hits    :         0
+   Misses  :         0
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:             4
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        2
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Tue May 13 10:45:12 2025
+Run ended on Tue May 13 10:45:13 2025
+
+Elapsed time was:     00:00:00.35
+CPU time was:         00:00:00.01

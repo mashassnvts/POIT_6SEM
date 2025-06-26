@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0438E04D-28D9-46CF-B402-B796B517CF5F}|ANC25_WEBAPI_DLL\\ANC25_WEBAPI_DLL.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\anc25_webapi_dll\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0438E04D-28D9-46CF-B402-B796B517CF5F}|ANC25_WEBAPI_DLL\\ANC25_WEBAPI_DLL.csproj|solutionrelative:anc25_webapi_dll\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0438E04D-28D9-46CF-B402-B796B517CF5F}|ANC25_WEBAPI_DLL\\ANC25_WEBAPI_DLL.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\anc25_webapi_dll\\models\\countrycodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0438E04D-28D9-46CF-B402-B796B517CF5F}|ANC25_WEBAPI_DLL\\ANC25_WEBAPI_DLL.csproj|solutionrelative:anc25_webapi_dll\\models\\countrycodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\contrycodes\\contrycodes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\contrycodes\\contrycodes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\services\\icountryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\services\\icountryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\views\\celebrities\\_celebrityform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\views\\celebrities\\_celebrityform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\views\\celebrities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\views\\celebrities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\views\\celebrities\\newhumanform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\views\\celebrities\\newhumanform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\views\\celebrities\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\views\\celebrities\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\filters\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\filters\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\views\\celebrities\\human.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\views\\celebrities\\human.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|d:\\masha\\university\\6_sem\\trvp\\trvp_04\\aspa\\aspa008_1\\views\\celebrities\\confirmcelebrity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14B5D59-F258-4FB3-84A4-CA8F3DEE7A1F}|ASPA008_1\\ASPA008_1.csproj|solutionrelative:aspa008_1\\views\\celebrities\\confirmcelebrity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ANC25_WEBAPI_DLL\\Extensions.cs",
+              "RelativeDocumentMoniker": "ANC25_WEBAPI_DLL\\Extensions.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ANC25_WEBAPI_DLL\\Extensions.cs",
+              "RelativeToolTip": "ANC25_WEBAPI_DLL\\Extensions.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T14:39:39.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContryCodes.json",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\ContryCodes\\ContryCodes.json",
+              "RelativeDocumentMoniker": "ASPA008_1\\ContryCodes\\ContryCodes.json",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\ContryCodes\\ContryCodes.json",
+              "RelativeToolTip": "ASPA008_1\\ContryCodes\\ContryCodes.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T14:39:00.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICountryService.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Services\\ICountryService.cs",
+              "RelativeDocumentMoniker": "ASPA008_1\\Services\\ICountryService.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Services\\ICountryService.cs",
+              "RelativeToolTip": "ASPA008_1\\Services\\ICountryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T14:38:43.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_CelebrityForm.cshtml",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\_CelebrityForm.cshtml",
+              "RelativeDocumentMoniker": "ASPA008_1\\Views\\Celebrities\\_CelebrityForm.cshtml",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\_CelebrityForm.cshtml",
+              "RelativeToolTip": "ASPA008_1\\Views\\Celebrities\\_CelebrityForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T10:06:12.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASPA008_1\\Views\\Celebrities\\Index.cshtml",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\Index.cshtml",
+              "RelativeToolTip": "ASPA008_1\\Views\\Celebrities\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T07:14:51.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASPA008_1\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASPA008_1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:51:05.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewHumanForm.cshtml",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\NewHumanForm.cshtml",
+              "RelativeDocumentMoniker": "ASPA008_1\\Views\\Celebrities\\NewHumanForm.cshtml",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\NewHumanForm.cshtml",
+              "RelativeToolTip": "ASPA008_1\\Views\\Celebrities\\NewHumanForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T08:07:19.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CountryCodes.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ANC25_WEBAPI_DLL\\Models\\CountryCodes.cs",
+              "RelativeDocumentMoniker": "ANC25_WEBAPI_DLL\\Models\\CountryCodes.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ANC25_WEBAPI_DLL\\Models\\CountryCodes.cs",
+              "RelativeToolTip": "ANC25_WEBAPI_DLL\\Models\\CountryCodes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:35:57.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CountryService.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Services\\CountryService.cs",
+              "RelativeDocumentMoniker": "ASPA008_1\\Services\\CountryService.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Services\\CountryService.cs",
+              "RelativeToolTip": "ASPA008_1\\Services\\CountryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T07:09:51.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASPA008_1\\Views\\Celebrities\\Edit.cshtml",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\Edit.cshtml",
+              "RelativeToolTip": "ASPA008_1\\Views\\Celebrities\\Edit.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T08:01:17.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Program.cs",
+              "RelativeDocumentMoniker": "ASPA008_1\\Program.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Program.cs",
+              "RelativeToolTip": "ASPA008_1\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAABcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T21:53:27.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Filters.cs",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Filters\\Filters.cs",
+              "RelativeDocumentMoniker": "ASPA008_1\\Filters\\Filters.cs",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Filters\\Filters.cs",
+              "RelativeToolTip": "ASPA008_1\\Filters\\Filters.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T07:55:59.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Human.cshtml",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\Human.cshtml",
+              "RelativeDocumentMoniker": "ASPA008_1\\Views\\Celebrities\\Human.cshtml",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\Human.cshtml",
+              "RelativeToolTip": "ASPA008_1\\Views\\Celebrities\\Human.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T09:45:09.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfirmCelebrity.cshtml",
+              "DocumentMoniker": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\ConfirmCelebrity.cshtml",
+              "RelativeDocumentMoniker": "ASPA008_1\\Views\\Celebrities\\ConfirmCelebrity.cshtml",
+              "ToolTip": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_04\\ASPA\\ASPA008_1\\Views\\Celebrities\\ConfirmCelebrity.cshtml",
+              "RelativeToolTip": "ASPA008_1\\Views\\Celebrities\\ConfirmCelebrity.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T08:07:17.128Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

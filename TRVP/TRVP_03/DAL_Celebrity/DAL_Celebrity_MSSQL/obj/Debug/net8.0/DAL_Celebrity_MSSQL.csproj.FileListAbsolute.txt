@@ -1,0 +1,17 @@
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\bin\Debug\net8.0\DAL_Celebrity_MSSQL.deps.json
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\bin\Debug\net8.0\DAL_Celebrity_MSSQL.dll
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\bin\Debug\net8.0\DAL_Celebrity_MSSQL.pdb
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.GeneratedMSBuildEditorConfig.editorconfig
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.AssemblyInfoInputs.cache
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.AssemblyInfo.cs
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.csproj.CoreCompileInputs.cache
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.dll
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\refint\DAL_Celebrity_MSSQL.dll
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.pdb
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\ref\DAL_Celebrity_MSSQL.dll
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.csproj.AssemblyReference.cache
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\bin\Debug\net8.0\DAL_Celebrity_MSSQL.runtimeconfig.json
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\bin\Debug\net8.0\DAL_Celebrity.dll
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\bin\Debug\net8.0\DAL_Celebrity.pdb
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Cele.76F26888.Up2Date
+D:\masha\university\6_sem\TRVP\TRVP_03\DAL_Celebrity\DAL_Celebrity_MSSQL\obj\Debug\net8.0\DAL_Celebrity_MSSQL.genruntimeconfig.cache

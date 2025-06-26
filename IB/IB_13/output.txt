@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>body{font-family: monospace; font-size: 16px; line-height: 1.5;}</style></head><body><span style="color: #00FF00">﻿</span>Строка номер один    
+В<span style="color: #FF00FF">т</span>орая строка    текста   <span style="color: #FF00FF"> </span>
+Третья строка документ<span style="color: #00FF00">а</span>    
+Четвертая    строк<span style="color: #FF00FF">а</span> файла    
+Пятая строка<span style="color: #00FF00"> </span>примера
+Шестая строка д<span style="color: #00FF00">а</span>нных
+Седьмая   строка  <span style="color: #00FF00"> </span>  кода
+Восьмая строка т<span style="color: #00FF00"> </span> екста
+Девятая строк   <span style="color: #FF00FF"> </span> а информации
+Десятая с<span style="color: #FF00FF">т</span>рокааааа контента
+Одинн<span style="color: #00FF00">а</span>дцатая строка
+Двенадцат<span style="color: #FF00FF">а</span>я строка
+Тринадцатая   <span style="color: #00FF00"> </span>строка
+Четыр  надцатая <span style="color: #00FF00">с</span>трока
+Пя  тнадца  тая с<span style="color: #FF00FF">т</span>   рока
+Шестнадца  тая строка
+</body></html>

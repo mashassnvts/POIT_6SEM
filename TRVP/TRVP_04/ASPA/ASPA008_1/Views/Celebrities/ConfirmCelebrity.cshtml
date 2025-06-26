@@ -1,0 +1,31 @@
+﻿@model ConfirmCelebrityModel
+
+<div class="container">
+    <h2>Подтверждение данных</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <img src="@Model.TempPhotoUrl" class="img-fluid rounded" alt="Фото">
+        </div>
+        <div class="col-md-8">
+            <dl class="row">
+                <dt class="col-sm-3">Имя:</dt>
+                <dd class="col-sm-9">@Model.FullName</dd>
+                <dt class="col-sm-3">Национальность:</dt>
+                <dd class="col-sm-9">
+                    @(Model.NationalityName ?? "Не указано")
+                    @if (!string.IsNullOrEmpty(Model.NationalityCode))
+                    {
+                        <small class="text-muted">(@Model.NationalityCode)</small>
+                    }
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <form asp-action="FinalizeCelebrity" method="post" class="mt-4">
+        <input type="hidden" asp-for="TempFileName" />
+        <input type="hidden" asp-for="FullName" />
+        <input type="hidden" asp-for="NationalityCode" />
+        <button type="submit" class="btn btn-success">Подтвердить</button>
+        <a asp-action="NewHumanForm" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

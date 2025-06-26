@@ -1,0 +1,128 @@
+openapi: 3.0.3
+info:
+  title: Справочник
+  description: REST API 
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+    description: Локальный сервер разработки
+
+paths:
+  /TS:
+    get:
+      summary: Получить все записи
+      description: Возвращает полный список контактов из телефонного справочника
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Contact'
+        '500':
+          description: Ошибка сервера
+
+    post:
+      summary: Добавить новый контакт
+      description: Создает новую запись в телефонном справочнике
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ContactInput'
+      responses:
+        '201':
+          description: Контакт успешно создан
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contact'
+        '400':
+          description: Неверные входные данные
+        '500':
+          description: Ошибка сервера
+
+    put:
+      summary: Обновить контакт
+      description: Обновляет существующую запись в справочнике
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Contact'
+      responses:
+        '200':
+          description: Контакт успешно обновлен
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contact'
+        '400':
+          description: Неверные входные данные
+        '404':
+          description: Контакт не найден
+        '500':
+          description: Ошибка сервера
+
+    delete:
+      summary: Удалить контакт
+      description: Удаляет запись из телефонного справочника
+      parameters:
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: integer
+          description: ID контакта для удаления
+      responses:
+        '204':
+          description: Контакт успешно удален
+        '404':
+          description: Контакт не найден
+        '500':
+          description: Ошибка сервера
+
+components:
+  schemas:
+    Contact:
+      type: object
+      required:
+        - id
+        - name
+        - phone
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          example: "Сосновец Мария"
+        phone:
+          type: string
+          example: "+375291234567"
+        address:
+          type: string
+          example: "Мозырь"
+      additionalProperties: false
+
+    ContactInput:
+      type: object
+      required:
+        - name
+        - phone
+      properties:
+        name:
+          type: string
+          example: "Кивлинас Олег"
+        phone:
+          type: string
+          example: "+375291234568"
+        address:
+          type: string
+          example: "Мозырь, катапульта"
+      additionalProperties: false

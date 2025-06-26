@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Celebrities</title>
+    <script src="/js/Celebrities.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .celebrities-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .celebrity {
+            text-align: center;
+        }
+
+            .celebrity img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                cursor: pointer;
+                border: 2px solid transparent;
+            }
+
+                .celebrity img:hover {
+                    border: 2px solid #007bff;
+                }
+
+        #events-container {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+            #events-container h2 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            #events-container ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            #events-container li {
+                padding: 5px 0;
+            }
+    </style>
+</head>
+<body>
+    <h1>Celebrities</h1>
+    <div class="celebrities-container" id="celebrities-container">
+    </div>
+    <div id="events-container">
+        <h2>Life Events</h2>
+        <ul id="events-list">
+        </ul>
+    </div>
+</body>
+</html>

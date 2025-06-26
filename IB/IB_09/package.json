@@ -1,0 +1,14 @@
+{
+  "name": "knapsack-crypto",
+  "version": "1.0.0",
+  "description": "Приложение для шифрования методом рюкзака",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

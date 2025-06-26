@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA-256</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        #inputText {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        #hashButton {
+            background-color: #9c27b0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        #hashButton:hover {
+            background-color: #7b1fa2;
+        }
+
+        #hashOutput {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        #performanceChart {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>SHA-256</h1>
+    <textarea id="inputText"></textarea>
+    <button id="hashButton">Сгенерировать хеш</button>
+    <div id="hashOutput"></div>
+    
+    <h2>Анализ производительности</h2>
+    <canvas id="performanceChart" width="1000" height="300"></canvas>
+
+    <script>
+        document.getElementById('hashButton').addEventListener('click', () => {
+            const inputText = document.getElementById('inputText').value;
+            fetch('/hash', {
+                method: 'POST',
+                body: inputText
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('hashOutput').innerText = `Хеш: ${data.hash}\nВремя выполнения: ${data.timeTaken.toFixed(4)} мс`;
+            });
+        });
+
+        window.addEventListener('load', () => {
+            fetch('/test-hash', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                const lengths = data.map(d => d.length);
+                const times = data.map(d => d.timeTaken);
+                renderChart(lengths, times);
+            });
+        });
+
+        function renderChart(lengths, times) {
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: lengths.map(l => l.toLocaleString() + ' симв.'),
+                    datasets: [{
+                        label: 'Время хеширования',
+                        data: times,
+                        borderColor: '#9c27b0',
+                        backgroundColor: 'rgba(156, 39, 176, 0.1)',
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#9c27b0',
+                        pointBorderColor: '#fff',
+                        pointBorderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Время: ${context.raw.toFixed(4)} мс`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Длина входных данных',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)',
+                                drawBorder: true
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Время выполнения (мс)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)',
+                                drawBorder: true
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return value.toFixed(2) + ' мс';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

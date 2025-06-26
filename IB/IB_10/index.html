@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA vs ElGamal Performance</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        canvas {
+            max-width: 400px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Performance Comparison</h1>
+
+    <canvas id="speedChart"></canvas>
+    <canvas id="sizeChart"></canvas>
+
+    <script>
+        const speedData = {
+            labels: ["10", "50", "100", "200", "300", "400", "500"],
+            datasets: [
+                {
+                    label: "RSA Encryption Time (ms)",
+                    data: [5, 10, 15, 30, 45, 60, 80],
+                    borderColor: "#FF5733",
+                    backgroundColor: "rgba(255, 87, 51, 0.2)",
+                },
+                {
+                    label: "RSA Decryption Time (ms)",
+                    data: [7, 14, 22, 40, 60, 80, 100],
+                    borderColor: "#33FF57",
+                    backgroundColor: "rgba(51, 255, 87, 0.2)",
+                },
+                {
+                    label: "ElGamal Encryption Time (ms)",
+                    data: [4, 8, 12, 24, 36, 48, 60],
+                    borderColor: "#3357FF",
+                    backgroundColor: "rgba(51, 87, 255, 0.2)",
+                },
+                {
+                    label: "ElGamal Decryption Time (ms)",
+                    data: [6, 12, 18, 35, 50, 65, 85],
+                    borderColor: "#FF33A1",
+                    backgroundColor: "rgba(255, 51, 161, 0.2)",
+                },
+            ],
+        };
+
+        const sizeData = {
+            labels: ["10", "50", "100", "200", "300", "400", "500"],
+            datasets: [
+                {
+                    label: "RSA Ciphertext Size (bytes)",
+                    data: [256, 256, 256, 512, 768, 1024, 1280],
+                    borderColor: "#FF5733",
+                    backgroundColor: "rgba(255, 87, 51, 0.2)",
+                },
+                {
+                    label: "ElGamal Ciphertext Size (bytes)",
+                    data: [512, 1024, 1536, 2048, 2560, 3072, 3584],
+                    borderColor: "#3357FF",
+                    backgroundColor: "rgba(51, 87, 255, 0.2)",
+                },
+            ],
+        };
+
+        const configSpeed = {
+            type: 'line',
+            data: speedData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Encryption and Decryption Speed Comparison',
+                    },
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Time (ms)',
+                        },
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Message Length (characters)',
+                        },
+                    },
+                },
+            },
+        };
+
+        const configSize = {
+            type: 'line',
+            data: sizeData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Ciphertext Size Comparison',
+                    },
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Size (bytes)',
+                        },
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Message Length (characters)',
+                        },
+                    },
+                },
+            },
+        };
+
+        new Chart(document.getElementById('speedChart'), configSpeed);
+        new Chart(document.getElementById('sizeChart'), configSize);
+    </script>
+</body>
+</html>

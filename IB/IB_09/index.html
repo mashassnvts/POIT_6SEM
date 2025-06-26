@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование и Расшифрование</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #3d3d3d;
+        }
+
+        h1 {
+            color: #6d5ee2;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #b3b3b3;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            background: #1a1a1a;
+            border: 2px solid #3d3d3d;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #6d5ee2;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            background: #1a1a1a;
+            border: 2px solid #3d3d3d;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #6d5ee2;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6d5ee2;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #6d5ee2;
+            transform: translateY(-2px);
+        }
+
+        .toggle-button {
+            background: #3d3d3d;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 8px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .toggle-button:hover {
+            background: #4d4d4d;
+        }
+
+        .result {
+            margin-top: 15px;
+            padding: 15px;
+            background: #1a1a1a;
+            border-radius: 6px;
+            display: none;
+            border: 1px solid #3d3d3d;
+        }
+
+        .result.show {
+            display: block;
+        }
+
+        .result h3 {
+            color: #6d5ee2;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .numbers {
+            word-break: break-all;
+            line-height: 1.4;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            background: #2d2d2d;
+            padding: 10px;
+            border-radius: 4px;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+
+        .error {
+            color: #ff4757;
+            margin-top: 5px;
+            font-size: 12px;
+            display: none;
+            padding: 6px;
+            background: rgba(255, 71, 87, 0.1);
+            border-radius: 4px;
+        }
+
+        .error.show {
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+
+            .numbers {
+                font-size: 11px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Шифрование и Расшифрование</h1>
+        <div class="form-group">
+            <label for="fio">Введите ФИО</label>
+            <input type="text" id="fio" placeholder="Фамилия Имя Отчество">
+            <div class="error" id="fioError"></div>
+        </div>
+        <div class="form-group">
+            <label for="z">Выберите значение Z (6 для Base64, 8 для ASCII)</label>
+            <select id="z">
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select>
+            <div class="error" id="zError"></div>
+        </div>
+        <button onclick="generateKeys()">Генерация ключей</button>
+        <div class="result" id="key-info">
+            <h3>Сгенерированные ключи</h3>
+            <div class="numbers" id="super-sequence"></div>
+            <button class="toggle-button" id="toggle-super" onclick="toggleSequence('super')">Показать все</button>
+            <div class="numbers" id="normal-sequence"></div>
+            <button class="toggle-button" id="toggle-normal" onclick="toggleSequence('normal')">Показать все</button>
+            <div class="numbers" id="M"></div>
+            <div class="numbers" id="W"></div>
+        </div>
+        <button onclick="encryptMessage()">Зашифровать ФИО</button>
+        <div class="result" id="encrypted-message">
+            <h3>Зашифрованное сообщение</h3>
+            <div class="numbers" id="encrypted-text"></div>
+            <div class="numbers" id="encryption-time"></div>
+        </div>
+        <div class="form-group">
+            <label for="encrypted-input">Введите зашифрованное сообщение</label>
+            <input type="text" id="encrypted-input" placeholder="Введите число">
+            <div class="error" id="encryptedInputError"></div>
+        </div>
+        <button onclick="decryptMessage()">Расшифровать сообщение</button>
+        <div class="result" id="decrypted-message">
+            <h3>Расшифрованное сообщение</h3>
+            <div class="numbers" id="decrypted-text"></div>
+            <div class="numbers" id="decryption-time"></div>
+        </div>
+    </div>
+
+    <script>
+        // Функция для сокращённого отображения последовательностей
+        function formatSequence(sequence, isShortened, type) {
+            const label = type === 'super' ? 'Сверхвозрастающая последовательность: ' : 'Нормальная последовательность (открытый ключ): ';
+            if (isShortened) {
+                const short = sequence.slice(0, 10);
+                return `${label}[${short.join(', ')} ${sequence.length > 10 ? '...' : ''}]`;
+            }
+            return `${label}[${sequence.join(', ')}]`;
+        }
+
+        // Переключение между сокращённым и полным отображением
+        let superShortened = true;
+        let normalShortened = true;
+        let superSequenceFull = [];
+        let normalSequenceFull = [];
+
+        function toggleSequence(type) {
+            if (type === 'super') {
+                superShortened = !superShortened;
+                document.getElementById('toggle-super').textContent = superShortened ? 'Показать все' : 'Скрыть';
+                document.getElementById('super-sequence').textContent = formatSequence(superSequenceFull, superShortened, 'super');
+            } else if (type === 'normal') {
+                normalShortened = !normalShortened;
+                document.getElementById('toggle-normal').textContent = normalShortened ? 'Показать все' : 'Скрыть';
+                document.getElementById('normal-sequence').textContent = formatSequence(normalSequenceFull, normalShortened, 'normal');
+            }
+        }
+
+        // Функция для нахождения обратного числа по модулю
+        function modularInverse(a, m) {
+            a = BigInt(a);
+            m = BigInt(m);
+            let m0 = m, t, q;
+            let x0 = BigInt(0), x1 = BigInt(1);
+
+            if (m === BigInt(1)) return BigInt(0);
+
+            while (a > BigInt(1)) {
+                q = a / m;
+                t = m;
+                m = a % m;
+                a = t;
+                t = x0;
+                x0 = x1 - q * x0;
+                x1 = t;
+            }
+
+            if (x1 < BigInt(0)) x1 += m0;
+
+            return x1;
+        }
+
+        // Функция для генерации ключей
+        async function generateKeys() {
+            const z = document.getElementById('z').value;
+            const zError = document.getElementById('zError');
+            const keyInfo = document.getElementById('key-info');
+
+            zError.classList.remove('show');
+            keyInfo.classList.remove('show');
+
+            if (!z) {
+                zError.textContent = 'Выберите значение Z';
+                zError.classList.add('show');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost:3000/generate-keys', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ z: parseInt(z) })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Не удалось сгенерировать ключи');
+                }
+
+                const data = await response.json();
+                console.log('Generated keys:', data);
+
+                // Сохраняем полные последовательности
+                superSequenceFull = data.superSequence;
+                normalSequenceFull = data.normalSequence;
+
+                // Обновляем UI с сокращёнными последовательностями
+                document.getElementById('super-sequence').textContent = formatSequence(data.superSequence, true, 'super');
+                document.getElementById('normal-sequence').textContent = formatSequence(data.normalSequence, true, 'normal');
+                document.getElementById('M').textContent = `M: ${data.M}`;
+                document.getElementById('W').textContent = `W: ${data.W}`;
+                keyInfo.classList.add('show');
+
+            } catch (error) {
+                console.error('Error generating keys:', error);
+                zError.textContent = error.message || 'Ошибка при генерации ключей';
+                zError.classList.add('show');
+            }
+        }
+
+        // Функция для шифрования
+        async function encryptMessage() {
+            const message = document.getElementById('fio').value;
+            const fioError = document.getElementById('fioError');
+            const encryptedMessage = document.getElementById('encrypted-message');
+
+            fioError.classList.remove('show');
+            encryptedMessage.classList.remove('show');
+
+            if (!normalSequenceFull || normalSequenceFull.length === 0) {
+                fioError.textContent = 'Пожалуйста, сгенерируйте ключи перед шифрованием';
+                fioError.classList.add('show');
+                return;
+            }
+
+            if (!message) {
+                fioError.textContent = 'Пожалуйста, введите ФИО';
+                fioError.classList.add('show');
+                return;
+            }
+
+            const startTime = performance.now();
+
+            // Преобразуем сообщение в бинарное представление (UTF-8)
+            const encoder = new TextEncoder();
+            const messageBytes = encoder.encode(message);
+            let binaryMessage = "";
+            for (let byte of messageBytes) {
+                binaryMessage += byte.toString(2).padStart(8, '0');
+            }
+
+            // Проверка длины ключа
+            if (binaryMessage.length > normalSequenceFull.length) {
+                fioError.textContent = `Сообщение слишком длинное для текущего ключа! Длина сообщения: ${binaryMessage.length} бит, длина ключа: ${normalSequenceFull.length} бит`;
+                fioError.classList.add('show');
+                return;
+            }
+
+            let encrypted = BigInt(0);
+            for (let i = 0; i < binaryMessage.length; i++) {
+                if (binaryMessage[i] === '1') {
+                    encrypted += BigInt(normalSequenceFull[i]);
+                }
+            }
+
+            const endTime = performance.now();
+            const encryptionTime = (endTime - startTime).toFixed(4);
+
+            console.log('Input message:', message);
+            console.log('Binary message:', binaryMessage);
+            console.log('Encrypted:', encrypted.toString());
+
+            // Обновляем UI
+            document.getElementById('encrypted-text').textContent = encrypted.toString();
+            document.getElementById('encryption-time').textContent = `Время шифрования: ${encryptionTime} мс`;
+            encryptedMessage.classList.add('show');
+        }
+
+        // Функция для расшифровки
+        async function decryptMessage() {
+            const encryptedInput = document.getElementById('encrypted-input').value || document.getElementById('encrypted-text').textContent;
+            const encryptedInputError = document.getElementById('encryptedInputError');
+            const decryptedMessage = document.getElementById('decrypted-message');
+            let encrypted;
+
+            encryptedInputError.classList.remove('show');
+            decryptedMessage.classList.remove('show');
+
+            try {
+                encrypted = BigInt(encryptedInput);
+            } catch (error) {
+                console.error('Ошибка при преобразовании зашифрованного сообщения:', error);
+                encryptedInputError.textContent = 'Пожалуйста, введите корректное зашифрованное сообщение (число)';
+                encryptedInputError.classList.add('show');
+                return;
+            }
+
+            const M = BigInt(document.getElementById('M').textContent.replace('M: ', ''));
+            const W = BigInt(document.getElementById('W').textContent.replace('W: ', ''));
+
+            if (!superSequenceFull || superSequenceFull.length === 0) {
+                encryptedInputError.textContent = 'Пожалуйста, сгенерируйте ключи перед расшифровкой';
+                encryptedInputError.classList.add('show');
+                return;
+            }
+
+            const startTime = performance.now();
+
+            // Расшифровываем сообщение
+            const WInverse = modularInverse(W, M);
+            let decryptedSum = (encrypted * WInverse) % M;
+            console.log('WInverse:', WInverse.toString());
+            console.log('Decrypted sum:', decryptedSum.toString());
+
+            let binaryMessage = new Array(superSequenceFull.length).fill('0');
+            for (let i = superSequenceFull.length - 1; i >= 0; i--) {
+                if (BigInt(superSequenceFull[i]) <= decryptedSum) {
+                    binaryMessage[i] = '1';
+                    decryptedSum -= BigInt(superSequenceFull[i]);
+                }
+            }
+
+            // Преобразуем бинарное сообщение в текст (UTF-8)
+            const binaryString = binaryMessage.join('');
+            console.log('Decrypted binary:', binaryString);
+
+            // Определяем длину исходного сообщения (в байтах)
+            const message = document.getElementById('fio').value;
+            const encoder = new TextEncoder();
+            const messageBytes = encoder.encode(message);
+            const expectedBinaryLength = messageBytes.length * 8;
+            const trimmedBinary = binaryString.slice(0, expectedBinaryLength);
+
+            console.log('Expected binary length:', expectedBinaryLength);
+            console.log('Trimmed binary:', trimmedBinary);
+
+            let byteArray = [];
+            for (let i = 0; i < trimmedBinary.length; i += 8) {
+                const byte = trimmedBinary.slice(i, i + 8);
+                if (byte.length === 8) {
+                    byteArray.push(parseInt(byte, 2));
+                }
+            }
+
+            console.log('Byte array:', byteArray);
+
+            // Декодируем байты в строку (UTF-8)
+            const decoder = new TextDecoder('utf-8');
+            const decryptedMessageText = decoder.decode(new Uint8Array(byteArray));
+
+            const endTime = performance.now();
+            const decryptionTime = (endTime - startTime).toFixed(4);
+
+            console.log('Decrypted message:', decryptedMessageText);
+
+            // Обновляем UI
+            document.getElementById('decrypted-text').textContent = decryptedMessageText;
+            document.getElementById('decryption-time').textContent = `Время расшифровки: ${decryptionTime} мс`;
+            decryptedMessage.classList.add('show');
+
+            // В функции encryptMessage после измерения времени:
+const encryptionData = {
+    sequenceLength: normalSequenceFull.length,
+    zValue: document.getElementById('z').value,
+    messageLength: message.length,
+    timeMs: encryptionTime,
+    operation: 'encrypt'
+};
+console.log(JSON.stringify(encryptionData));
+
+// В функции decryptMessage после измерения времени:
+const decryptionData = {
+    sequenceLength: superSequenceFull.length,
+    zValue: document.getElementById('z').value,
+    messageLength: decryptedMessageText.length,
+    timeMs: decryptionTime,
+    operation: 'decrypt'
+};
+console.log(JSON.stringify(decryptionData));
+        }
+    </script>
+</body>
+</html>

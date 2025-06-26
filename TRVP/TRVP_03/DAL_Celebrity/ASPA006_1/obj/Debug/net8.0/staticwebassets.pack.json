@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Babbage.jpg",
+      "PackagePath": "staticwebassets\\Images\\Babbage.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Berners-Lee.jpg",
+      "PackagePath": "staticwebassets\\Images\\Berners-Lee.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Chomsky.jpg",
+      "PackagePath": "staticwebassets\\Images\\Chomsky.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Codd.jpg",
+      "PackagePath": "staticwebassets\\Images\\Codd.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Dijkstra.jpg",
+      "PackagePath": "staticwebassets\\Images\\Dijkstra.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Ershov.jpg",
+      "PackagePath": "staticwebassets\\Images\\Ershov.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Huntington.jpg",
+      "PackagePath": "staticwebassets\\Images\\Huntington.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Knuth.jpg",
+      "PackagePath": "staticwebassets\\Images\\Knuth.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Linus.jpg",
+      "PackagePath": "staticwebassets\\Images\\Linus.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Lovelace.jpg",
+      "PackagePath": "staticwebassets\\Images\\Lovelace.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Neumann.jpg",
+      "PackagePath": "staticwebassets\\Images\\Neumann.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\Tanenbaum.jpg",
+      "PackagePath": "staticwebassets\\Images\\Tanenbaum.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Images\\default.jpg",
+      "PackagePath": "staticwebassets\\Images\\default.jpg"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\Index.html",
+      "PackagePath": "staticwebassets\\Index.html"
+    },
+    {
+      "Id": "D:\\masha\\university\\6_sem\\TRVP\\TRVP_03\\DAL_Celebrity\\ASPA006_1\\wwwroot\\js\\Celebrities.js",
+      "PackagePath": "staticwebassets\\js\\Celebrities.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASPA006_1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASPA006_1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ASPA006_1.props",
+      "PackagePath": "build\\ASPA006_1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ASPA006_1.props",
+      "PackagePath": "buildMultiTargeting\\ASPA006_1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ASPA006_1.props",
+      "PackagePath": "buildTransitive\\ASPA006_1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

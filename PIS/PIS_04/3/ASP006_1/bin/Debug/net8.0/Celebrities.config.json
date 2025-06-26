@@ -1,0 +1,6 @@
+{
+  "Celebrities": {
+    "PhotosFolder": "D:\\masha\\university\\6_sem\\PIS\\PIS_04\\3\\Celebrities",
+    "ConnectionString": "Data Source=MASHA;Initial Catalog=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True;"
+  }
+}

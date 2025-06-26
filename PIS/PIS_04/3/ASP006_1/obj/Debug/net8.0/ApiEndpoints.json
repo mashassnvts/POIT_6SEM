@@ -1,0 +1,286 @@
+[
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_0",
+    "RelativePath": "api/Celebrities/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_4",
+    "RelativePath": "api/Celebrities/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "celebrity",
+        "Type": "DAL_Celebrity.Celebrity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_1",
+    "RelativePath": "api/Celebrities/{id:int:min(1)}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_3",
+    "RelativePath": "api/Celebrities/{id:int:min(1)}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_5",
+    "RelativePath": "api/Celebrities/{id:int:min(1)}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "celebrity",
+        "Type": "DAL_Celebrity.Celebrity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_2",
+    "RelativePath": "api/Celebrities/Lifeevents/{id:int:min(1)}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_6",
+    "RelativePath": "api/Celebrities/photo/{fname}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fname",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_7",
+    "RelativePath": "api/Lifeevents/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_11",
+    "RelativePath": "api/Lifeevents/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lifeevent",
+        "Type": "DAL_Celebrity.Lifeevent",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_8",
+    "RelativePath": "api/Lifeevents/{id:int:min(1)}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_10",
+    "RelativePath": "api/Lifeevents/{id:int:min(1)}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_12",
+    "RelativePath": "api/Lifeevents/{id:int:min(1)}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lifeevent",
+        "Type": "DAL_Celebrity.Lifeevent",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASP006_1.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CInit\u003Eb__1_9",
+    "RelativePath": "api/Lifeevents/Celebrities/{id:int:min(1)}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

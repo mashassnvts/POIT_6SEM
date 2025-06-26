@@ -1,0 +1,48 @@
+@model NewCelebrityModel
+@inject ASPA008_1.Services.ICountryService CountryService
+
+@using (Html.BeginForm("ProcessNewCelebrity", "Celebrities", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group mb-3">
+        @Html.LabelFor(m => m.FullName, "Полное имя", new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.FullName, new { @class = "form-control", required = "required" })
+        @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(m => m.Nationality, "Национальность", new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.Nationality, 
+            CountryService.GetCountryList(),
+            "-- Выберите страну --",
+            new { @class = "form-select", required = "required" })
+        @Html.ValidationMessageFor(m => m.Nationality, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(m => m.Photo, "Фотография", new { @class = "form-label" })
+        <input type="file" name="Photo" class="form-control" 
+               accept=".jpg,.jpeg,.png" 
+               onchange="validateFileExtension(this)" 
+               required />
+        <small class="form-text text-muted">Допустимые форматы: JPG, JPEG, PNG</small>
+        @Html.ValidationMessageFor(m => m.Photo, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Далее</button>
+}
+
+@section Scripts {
+    <script>
+        function validateFileExtension(input) {
+            const validExtensions = ['jpg', 'jpeg', 'png'];
+            const fileName = input.value.toLowerCase();
+            const isValid = validExtensions.some(ext => fileName.endsWith(ext));
+            if (!isValid) {
+                alert('Только JPG/PNG файлы разрешены');
+                input.value = '';
+            }
+        }
+    </script>
+} 
